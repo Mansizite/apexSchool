@@ -45,14 +45,14 @@ export default function Conveyance() {
                 Yearly Planner
               </Link>
               <Link
-                href="/academics/curriculum"
+                href="#curriculum"
                 className={`list-group-item list-group-item-action ${activeLink === "curriculum" ? "active" : ""}`}
                 onClick={() => setActiveLink("curriculum")}
               >
                 Curriculum
               </Link>
               <Link
-                href="/academics/progress-and-promotion"
+                href="#progress-and-promotion"
                 className={`list-group-item list-group-item-action ${activeLink === "progressAndPromotion" ? "active" : ""}`}
                 onClick={() => setActiveLink("progressAndPromotion")}
               >

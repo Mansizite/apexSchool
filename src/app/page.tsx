@@ -6,6 +6,7 @@ import Faci from '../components/facilities';
 import Footer from '../components/footer'; // Import the Footer component
 import Hero from '../components/hero';
 
+
 export default function Home() {
   return (
     <>

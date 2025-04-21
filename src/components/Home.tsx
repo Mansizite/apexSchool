@@ -115,10 +115,16 @@
 
 
 
-
+"use client";
 import Link from 'next/link';
+import { AcademicCapIcon, UsersIcon, LockClosedIcon, HeartIcon, MusicNoteIcon, PhoneIcon, DesktopComputerIcon, LightBulbIcon } from '@heroicons/react/solid';
+
+
+
 
 const Schedule = () => {
+ 
+
   return (
     <>
       <section className="why-choose-us section-padding" id="section_4">
@@ -207,135 +213,154 @@ const Schedule = () => {
         <h2>Our <u className="text-info">Facilities</u></h2>
       </div>
 
-      {/* Card 1 */}
-      <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-        <div className="pricing-thumb bg-white shadow-lg">
-          <div className="pricing-title-wrap d-flex align-items-center">
-            <h4 className="pricing-title text-white mb-0">Classrooms</h4>
-          </div>
+     {/* Image 1: Classroom */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'10px'}}>
+    <img src="/F1.jpg" alt="Classroom" className="img-fluid" />
+  </div>
+</div>
 
-          <div className="pricing-body">
-            <p><i className="bi-house-door me-2"></i> Spacious & Well-Equipped</p>
-            <p><i className="bi-person-check me-2"></i> Modern Learning Tools</p>
-            <p><i className="bi-file-earmark-text me-2"></i> Comfortable Study Spaces</p>
-            <div className="border-bottom pb-3 mb-4"></div>
-            <p>Designed to foster student engagement and creativity.</p>
+{/* Image 3: Sports Complex */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'10px'}}>
+    <img src="/F2.jpg" alt="Sports Complex" className="img-fluid" />
+  </div>
+</div>
 
-            <Link href="#section_5" className="custom-btn btn mt-3">
-              Explore More
-            </Link>
-          </div>
-        </div>
-      </div>
+{/* Image 4: Science Lab */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'10px'}}>
+    <img src="/F3.jpg" alt="Science Lab" className="img-fluid" />
+  </div>
+</div>
 
-      {/* Card 2 */}
-      <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-        <div className="pricing-thumb bg-white shadow-lg">
-          <div className="pricing-title-wrap d-flex align-items-center">
-            <h4 className="pricing-title text-white mb-0">Library</h4>
-          </div>
+{/* Image 5: Art Room */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'30px'}}>
+    <img src="/F4.jpg" alt="Art Room" className="img-fluid" />
+  </div>
+</div>
 
-          <div className="pricing-body">
-            <p><i className="bi-book me-2"></i> Wide Range of Books</p>
-            <p><i className="bi-laptop me-2"></i> Digital Resources</p>
-            <p><i className="bi-person-lines-fill me-2"></i> Quiet Study Areas</p>
-            <div className="border-bottom pb-3 mb-4"></div>
-            <p>A peaceful space for reading and learning.</p>
+{/* Image 6: Computer Lab */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'30px'}}>
+    <img src="/F5.jpg" alt="Computer Lab" className="img-fluid" />
+  </div>
+</div>
 
-            <Link href="#section_5" className="custom-btn btn mt-3">
-              Visit the Library
-            </Link>
-          </div>
-        </div>
-      </div>
 
-      {/* Card 3 */}
-      <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-        <div className="pricing-thumb bg-white shadow-lg">
-          <div className="pricing-title-wrap d-flex align-items-center">
-            <h4 className="pricing-title text-white mb-0">Sports Complex</h4>
-          </div>
+{/* Image 4: Science Lab */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'30px'}}>
+    <img src="/F6.jpg" alt="Science Lab" className="img-fluid" />
+  </div>
+</div>
 
-          <div className="pricing-body">
-            <p><i className="bi-basketball me-2"></i> Basketball Court</p>
-            <p><i className="bi-person-running me-2"></i> Track & Field</p>
-            <p><i className="bi-geo-alt me-2"></i> Soccer Field</p>
-            <div className="border-bottom pb-3 mb-4"></div>
-            <p>Encouraging physical fitness and team activities.</p>
+{/* Image 5: Art Room */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'30px'}}>
+    <img src="/F7.jpg" alt="Art Room" className="img-fluid" />
+  </div>
+</div>
 
-            <Link href="#section_5" className="custom-btn btn mt-3">
-              Explore Sports
-            </Link>
-          </div>
-        </div>
-      </div>
+{/* Image 6: Computer Lab */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'30px'}}>
+    <img src="/F8.jpg" alt="Computer Lab" className="img-fluid" />
+  </div>
+</div>
 
-      {/* Card 4 */}
-      <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-        <div className="pricing-thumb bg-white shadow-lg">
-          <div className="pricing-title-wrap d-flex align-items-center">
-            <h4 className="pricing-title text-white mb-0">Science Lab</h4>
-          </div>
-
-          <div className="pricing-body">
-            <p><i className="bi-flask me-2"></i> Fully Equipped Labs</p>
-            <p><i className="bi-lightning me-2"></i> Interactive Science Tools</p>
-            <p><i className="bi-gear me-2"></i> Practical Learning Environment</p>
-            <div className="border-bottom pb-3 mb-4"></div>
-            <p>Fostering curiosity and hands-on experiments for students.</p>
-
-            <Link href="#section_5" className="custom-btn btn mt-3">
-              Explore Science Lab
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Card 5 */}
-      <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-        <div className="pricing-thumb bg-white shadow-lg">
-          <div className="pricing-title-wrap d-flex align-items-center">
-            <h4 className="pricing-title text-white mb-0">Art Room</h4>
-          </div>
-
-          <div className="pricing-body">
-            <p><i className="bi-palette me-2"></i> Creative Art Stations</p>
-            <p><i className="bi-paint-bucket me-2"></i> Painting & Sculpting Materials</p>
-            <p><i className="bi-brush me-2"></i> Spacious Art Spaces</p>
-            <div className="border-bottom pb-3 mb-4"></div>
-            <p>Encouraging creative expression and skill development.</p>
-
-            <Link href="#section_5" className="custom-btn btn mt-3">
-              Visit the Art Room
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Card 6 */}
-      <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-        <div className="pricing-thumb bg-white shadow-lg">
-          <div className="pricing-title-wrap d-flex align-items-center">
-            <h4 className="pricing-title text-white mb-0">Computer Lab</h4>
-          </div>
-
-          <div className="pricing-body">
-            <p><i className="bi-laptop me-2"></i> High-Speed Computers</p>
-            <p><i className="bi-cloud me-2"></i> Internet Access & Software</p>
-            <p><i className="bi-person-check me-2"></i> Tech Support Available</p>
-            <div className="border-bottom pb-3 mb-4"></div>
-            <p>Providing modern technology and tools for digital learning.</p>
-
-            <Link href="#section_5" className="custom-btn btn mt-3">
-              Discover Computer Lab
-            </Link>
-          </div>
-        </div>
-      </div>
+{/* Image 2: Library */}
+<div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" >
+  <div className="image-thumb bg-white shadow-lg" style={{marginTop:'30px'}}>
+    <img src="/F9.jpg" alt="Library" className="img-fluid" />
+  </div>
+</div>
 
     </div>
   </div>
 </section>
+
+    <section className="pricing section-padding" id="section_5">
+      <div className="container">
+        <div className="row">
+          <h2 className="text-center mb-4">Our <u className="text-info">Facilities</u></h2>
+
+          {/* Abacus Vedic Maths */}
+          <div className="col-lg-4 col-md-7 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow p-4 rounded-lg">
+              <AcademicCapIcon className="h-12 w-12 text-blue-600 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Abacus Vedic Maths</h3>
+            </div>
+          </div>
+
+          {/* School App Awareness */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <PhoneIcon className="h-12 w-12 text-green-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>School App Awareness</h3>
+            </div>
+          </div>
+
+          {/* CCTV Cameras */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <DesktopComputerIcon className="h-12 w-12 text-red-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>CCTV Cameras</h3>
+            </div>
+          </div>
+
+          {/* Child Counselor */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <HeartIcon className="h-12 w-12 text-purple-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Child Counselor</h3>
+            </div>
+          </div>
+
+          {/* Competitive Exams */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <LightBulbIcon className="h-12 w-12 text-yellow-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Competitive Exams</h3>
+            </div>
+          </div>
+
+          {/* Locker System */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <LockClosedIcon className="h-12 w-12 text-gray-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Locker System</h3>
+            </div>
+          </div>
+
+          {/* Medical Insurance */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <HeartIcon className="h-12 w-12 text-teal-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Medical Insurance</h3>
+            </div>
+          </div>
+
+          {/* Music Academy */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <MusicNoteIcon className="h-12 w-12 text-orange-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Music Academy</h3>
+            </div>
+          </div>
+
+          {/* Robotics */}
+          <div className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0" style={{ marginTop: '40px' }}>
+            <div className="text-center bg-white shadow-lg p-4 rounded-lg">
+              <AcademicCapIcon className="h-12 w-12 text-indigo-500 mb-3" style={{ height: '50px' }} />
+              <h3 className="text-sm font-semibold mb-2" style={{ fontSize: '20px' }}>Robotics</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     </>
   );

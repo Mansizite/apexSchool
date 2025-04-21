@@ -40,10 +40,10 @@ export default function EarlyGlimpsesPage() {
               <Link href="/about/early-glimpse" className={`list-group-item list-group-item-action ${activeLink === "earlyGlimpses" ? "active" : ""}`} onClick={() => setActiveLink("earlyGlimpses")}>Early Glimpses</Link>
               <Link href="/about/visionmission" className="list-group-item list-group-item-action">Mission and Vision</Link>
               <Link href="#committee" className="list-group-item list-group-item-action">Committee</Link>
-              <Link href="/about/infrastructure" className="list-group-item list-group-item-action">Infrastructure</Link>
+              
               <Link href="#facilities" className="list-group-item list-group-item-action">Facilities</Link>
               <Link href="#apex-team" className="list-group-item list-group-item-action">Apex Team</Link>
-              <Link href="/location" className="list-group-item list-group-item-action">Location</Link>
+              <Link href="#location" className="list-group-item list-group-item-action">Location</Link>
             </div>
           </div>
 

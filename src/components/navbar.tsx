@@ -69,9 +69,9 @@ const Navbar = () => {
           </button>
 
           <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-            <ul className="navbar-nav ms-auto" style={{ color: 'white' }}>
+            <ul className="navbar-nav ms-auto" style={{ color: 'white', }}>
               {/* About Us Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -83,14 +83,14 @@ const Navbar = () => {
                   <li><Link href="/about/early-glimpse">Early Glimpse</Link></li>
                   <li><Link href="/about/visionmission">Vision & Mission</Link></li>
                   <li><Link href="/about/committee">Committee</Link></li>
-                  <li><Link href="/about/#section_3">Facilities</Link></li>
+                  <li><Link href="/about/#">Facilities</Link></li>
                   <li><Link href="/about/apex-team">Apex Team</Link></li>
                   <li><Link href="#contact">Location</Link></li>
                 </ul>
               </li>
 
               {/* Academics Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -99,8 +99,8 @@ const Navbar = () => {
                   Academics <FaAngleDown />
                 </span>
                 <ul className={`dropdown-menu ${activeDropdown === 'academics' ? 'show' : ''}`}>
-                  <li><Link href="/academics/curriculum">Curriculum</Link></li>
-                  <li><Link href="/academics/progress">Progress and Promotions</Link></li>
+                  <li><Link href="#curriculum">Curriculum</Link></li>
+                  <li><Link href="#progress">Progress and Promotions</Link></li>
                   <li><Link href="/academics/language">Language</Link></li>
                   <li><Link href="/academics/conveyance">Conveyance</Link></li>
                   <li><Link href="/academics/school-and-exam-detail#school-uniform">School Uniform</Link></li>
@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
 
               {/* Admission Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -117,17 +117,17 @@ const Navbar = () => {
                   Admission <FaAngleDown />
                 </span>
                 <ul className={`dropdown-menu ${activeDropdown === 'admission' ? 'show' : ''}`}>
-                  <li><Link href="/admission/policy">Admission Policy</Link></li>
+                  <li><Link href="#policy">Admission Policy</Link></li>
                   <li><Link href="/admission/enquiry-form">Enquiry Form</Link></li>
-                  <li><Link href="/admission/procedure">Admission Procedure</Link></li>
+                  <li><Link href="#procedure">Admission Procedure</Link></li>
                   <li><Link href="/admission/documentsRequired">Documents</Link></li>
-                  <li><Link href="/admission/form">Admission Form</Link></li>
+                  <li><Link href="#form">Admission Form</Link></li>
                   <li><Link href="/admission/age-criteria">Age Criteria</Link></li>
                 </ul>
               </li>
 
               {/* Mandatory Public Disclosure Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -137,14 +137,14 @@ const Navbar = () => {
                 </span>
                 <ul className={`dropdown-menu ${activeDropdown === 'mpd' ? 'show' : ''}`}>
                   <li><Link href="/mpd/general-info">General Information</Link></li>
-                  <li><Link href="/infrastructure">School Infrastructure</Link></li>
+                  {/* <li><Link href="/infrastructure">School Infrastructure</Link></li> */}
                   <li><Link href="/mpd/staffTeaching">Staff (Teaching)</Link></li>
                   <li><Link href="/mpd/documents">Documents and Information</Link></li>
                   <li><Link href="/mpd/resultsAcademics">Results And Academics</Link></li>
                 </ul>
               </li>
 
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -153,7 +153,7 @@ const Navbar = () => {
                   Rules & Regulations <FaAngleDown />
                 </span>
                 <ul className={`dropdown-menu ${activeDropdown === "rules" ? "show" : ""}`}>
-                  <li><Link href="/rules-regulations/#">Rules of the School</Link></li>
+                  <li><Link href="#school">Rules of the School</Link></li>
                   <li><Link href="/rules-regulations/fees">Rules for Fees</Link></li>
                   <li><Link href="/rules-regulations/bus">Rules for Bus</Link></li>
                   <li><Link href="/rules-regulations/absenteeism">Absenteeism</Link></li>
@@ -165,7 +165,7 @@ const Navbar = () => {
               </li>
 
               {/* Gallery Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -185,7 +185,7 @@ const Navbar = () => {
               </li>
 
               {/* Co-Curricular Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
                   style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
@@ -194,19 +194,19 @@ const Navbar = () => {
                   Co-Curricular <FaAngleDown />
                 </span>
                 <ul className={`dropdown-menu ${activeDropdown === 'coCurricular' ? 'show' : ''}`}>
-                  <li><Link href="/activities/scouts">Scouts</Link></li>
-                  <li><Link href="/activities/physical-education">Physical Education</Link></li>
-                  <li><Link href="/activities/sports">Sports Activity</Link></li>
-                  <li><Link href="/activities/music">Music</Link></li>
-                  <li><Link href="/activities/dance">Dance</Link></li>
+                  <li><Link href="#scouts">Scouts</Link></li>
+                  <li><Link href="#physical-education">Physical Education</Link></li>
+                  <li><Link href="#sports">Sports Activity</Link></li>
+                  <li><Link href="#music">Music</Link></li>
+                  <li><Link href="#dance">Dance</Link></li>
                 </ul>
               </li>
 
               {/* Other Links */}
-              <li className="nav-item"><Link href="/career" className="nav-link custom-nav-link" style={{ color: 'white' }}>Career</Link></li>
-              <li className="nav-item"><Link href="/comprehensive" className="nav-link custom-nav-link" style={{ color: 'white' }}>Comprehensive Information</Link></li>
-              <li className="nav-item"><Link href="/contact" className="nav-link custom-nav-link" style={{ color: 'white' }}>Contact</Link></li>
-              <li className="nav-item"><Link href="/login" className="nav-link custom-nav-link" style={{ color: 'white' }}>Login</Link></li>
+              <li className="nav-item"><Link href="/career" className="nav-link custom-nav-link" style={{ color: 'white',fontSize:'14px' }}>Career</Link></li>
+              <li className="nav-item"><Link href="/comprehensive" className="nav-link custom-nav-link" style={{ color: 'white',fontSize:'14px' }}>Comprehensive Information</Link></li>
+              <li className="nav-item"><Link href="/contact" className="nav-link custom-nav-link" style={{ color: 'white',fontSize:'14px' }}>Contact</Link></li>
+              <li className="nav-item"><Link href="/login" className="nav-link custom-nav-link" style={{ color: 'white',fontSize:'14px' }}>Login</Link></li>
             </ul>
           </div>
         </div>
