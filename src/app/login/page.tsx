@@ -88,7 +88,8 @@ export default function LoginPage() {
           </a>
 
           <div className="text-center mt-4">
-            <p className="mb-0">Don't have an account?</p>
+          <p className="mb-0">Don&apos;t have an account?</p>
+
             <a href="#" className="text-primary">Sign Up</a>
           </div>
         </div>
