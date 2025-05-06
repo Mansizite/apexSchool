@@ -473,31 +473,7 @@ const Schedule = () => {
         </div>
       </section>
 
-      {/* Facilities Image Grid */}
-      <section className="pricing section-padding" id="section_5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-10 col-12 text-center mx-auto mb-5">
-              <h2>Our <u className="text-info">Facilities</u></h2>
-            </div>
-
-            {facilitiesImages.map((image, index) => (
-              <div key={index} className="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-                <div className="image-thumb bg-white shadow-lg" style={{ marginTop: '30px' }}>
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={400}
-                    height={300}
-                    className="img-fluid"
-                    style={{ objectFit: 'cover', borderRadius: '8px' }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+   
 
       {/* Icon-Based Facilities */}
       <section className="pricing section-padding" id="section_5-icons">

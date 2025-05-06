@@ -1324,3 +1324,19 @@ strong {
   font-size: 1rem;
   color: #666;
 }
+.vision-mission {
+  min-height: 100vh;
+}
+
+.gradient-underline {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+  }
+}

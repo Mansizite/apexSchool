@@ -69,31 +69,19 @@ const Navbar = () => {
           </button>
 
           <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-            <ul className="navbar-nav ms-auto" style={{ color: 'white', }}>
-              {/* About Us Dropdown */}
-              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
-                <span
-                  className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
-                  onClick={() => toggleDropdown('aboutUs')}
-                >
-                  About Us <FaAngleDown />
-                </span>
-                <ul className={`dropdown-menu ${activeDropdown === 'aboutUs' ? 'show' : ''}`}>
-                  <li><Link href="/about/early-glimpse">Early Glimpse</Link></li>
-                  <li><Link href="/about/visionmission">Vision & Mission</Link></li>
-                  <li><Link href="/about/committee">Committee</Link></li>
-                  <li><Link href="/about/#">Facilities</Link></li>
-                  <li><Link href="/about/apex-team">Apex Team</Link></li>
-                  <li><Link href="#contact">Location</Link></li>
-                </ul>
-              </li>
+            <ul className="navbar-nav ms-auto" style={{ color: 'white' }}>
+            <li className="nav-item" style={{fontSize: '15px'}}>
+  <Link href="/" className="nav-link custom-nav-link" style={{ color: 'white' }}>
+    About Us
+  </Link>
+</li>
 
+              
               {/* Academics Dropdown */}
               <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
+                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }}
                   onClick={() => toggleDropdown('academics')}
                 >
                   Academics <FaAngleDown />
@@ -111,7 +99,7 @@ const Navbar = () => {
               <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
+                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }}
                   onClick={() => toggleDropdown('admission')}
                 >
                   Admission <FaAngleDown />
@@ -126,28 +114,49 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              {/* Mandatory Public Disclosure Dropdown */}
+              {/* Co-Curricular Dropdown */}
               <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
-                  onClick={() => toggleDropdown('mpd')}
+                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }}
+                  onClick={() => toggleDropdown('coCurricular')}
                 >
-                  Mandatory Public Disclosure <FaAngleDown />
+                  Co-Curricular <FaAngleDown />
                 </span>
-                <ul className={`dropdown-menu ${activeDropdown === 'mpd' ? 'show' : ''}`}>
-                  <li><Link href="/mpd/general-info">General Information</Link></li>
-                  {/* <li><Link href="/infrastructure">School Infrastructure</Link></li> */}
-                  <li><Link href="/mpd/staffTeaching">Staff (Teaching)</Link></li>
-                  <li><Link href="/mpd/documents">Documents and Information</Link></li>
-                  <li><Link href="/mpd/resultsAcademics">Results And Academics</Link></li>
+                <ul className={`dropdown-menu ${activeDropdown === 'coCurricular' ? 'show' : ''}`}>
+                  <li><Link href="#scouts">Scouts</Link></li>
+                  <li><Link href="#physical-education">Physical Education</Link></li>
+                  <li><Link href="#sports">Sports Activity</Link></li>
+                  <li><Link href="#music">Music</Link></li>
+                  <li><Link href="#dance">Dance</Link></li>
                 </ul>
               </li>
 
+              {/* Apex Gallery Dropdown */}
               <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
+                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }}
+                  onClick={() => toggleDropdown('gallery')}
+                >
+                  Apex Gallery <FaAngleDown />
+                </span>
+                <ul className={`dropdown-menu ${activeDropdown === 'gallery' ? 'show' : ''}`}>
+                  <li><Link href="#event">Event</Link></li>
+                  <li><Link href="#magazines">Magazines</Link></li>
+                  <li><Link href="#student">Student Corner</Link></li>
+                  <li><Link href="#achievement">Achievement</Link></li>
+                  <li><Link href="#hierarchy">Hierarchy</Link></li>
+                  <li><Link href="#classmates">Classmates</Link></li>
+                  <li><Link href="#school-activities">School Activities</Link></li>
+                </ul>
+              </li>
+
+              {/* Rules & Regulations Dropdown */}
+              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
+                <span
+                  className="nav-link custom-nav-link"
+                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }}
                   onClick={() => toggleDropdown("rules")}
                 >
                   Rules & Regulations <FaAngleDown />
@@ -164,41 +173,20 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              {/* Gallery Dropdown */}
+              {/* Mandatory Public Disclosure Dropdown */}
               <li className="nav-item dropdown" style={{fontSize:'15px'}}>
                 <span
                   className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
-                  onClick={() => toggleDropdown('gallery')}
+                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }}
+                  onClick={() => toggleDropdown('mpd')}
                 >
-                  Apex Gallery <FaAngleDown />
+                  Mandatory Public Disclosure <FaAngleDown />
                 </span>
-                <ul className={`dropdown-menu ${activeDropdown === 'gallery' ? 'show' : ''}`}>
-                  <li><Link href="#event">Event</Link></li>
-                  <li><Link href="#magazines">Magazines</Link></li>
-                  <li><Link href="#student">Student Corner</Link></li>
-                  <li><Link href="#achievement">Achievement</Link></li>
-                  <li><Link href="#hierarchy">Hierarchy</Link></li>
-                  <li><Link href="#classmates">Classmates</Link></li>
-                  <li><Link href="#school-activities">School Activities</Link></li>
-                </ul>
-              </li>
-
-              {/* Co-Curricular Dropdown */}
-              <li className="nav-item dropdown" style={{fontSize:'15px'}}>
-                <span
-                  className="nav-link custom-nav-link"
-                  style={{ display: 'flex', flexDirection: 'row', color: 'white' }} // added color white here
-                  onClick={() => toggleDropdown('coCurricular')}
-                >
-                  Co-Curricular <FaAngleDown />
-                </span>
-                <ul className={`dropdown-menu ${activeDropdown === 'coCurricular' ? 'show' : ''}`}>
-                  <li><Link href="#scouts">Scouts</Link></li>
-                  <li><Link href="#physical-education">Physical Education</Link></li>
-                  <li><Link href="#sports">Sports Activity</Link></li>
-                  <li><Link href="#music">Music</Link></li>
-                  <li><Link href="#dance">Dance</Link></li>
+                <ul className={`dropdown-menu ${activeDropdown === 'mpd' ? 'show' : ''}`}>
+                  <li><Link href="/mpd/general-info">General Information</Link></li>
+                  <li><Link href="/mpd/staffTeaching">Staff (Teaching)</Link></li>
+                  <li><Link href="/mpd/documents">Documents and Information</Link></li>
+                  <li><Link href="/mpd/resultsAcademics">Results And Academics</Link></li>
                 </ul>
               </li>
 

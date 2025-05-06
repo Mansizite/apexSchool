@@ -413,36 +413,9 @@ const AboutAndSpeakers = () => {
       <section className="speakers section-padding" id="section_3">
   <div className="container">
     <div className="row">
-      <div className="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
-        <div className="speakers-text-info">
-          <h2 className="mb-4">
-            Our <u className="text-info">Team</u>
-          </h2>
-          <p>Meet the dedicated team of educators and leaders who guide our students to success at Apex International School.</p>
-        </div>
-      </div>
+    
 
-      <div className="col-lg-6 col-12">
-        <div className="speakers-thumb">
-          <Image
-            src="/images/avatar/portrait-good-looking-brunette-young-asian-woman.jpg"
-            className="img-fluid speakers-image"
-            alt="Director"
-            width={400}
-            height={400}
-          />
-          <small className="speakers-featured-text">Director</small>
-          <div className="speakers-info">
-            <h5 className="speakers-title mb-0">Dr. Ananya Deshmukh</h5>
-            <p className="speakers-text mb-0">Director of Apex International School</p>
-            <ul className="social-icon">
-              <li><a href="#" className="social-icon-link bi-facebook"></a></li>
-              <li><a href="#" className="social-icon-link bi-instagram"></a></li>
-              <li><a href="#" className="social-icon-link bi-linkedin"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+     
 
       <div className="col-lg-12 col-12">
         <div className="row">
@@ -525,7 +498,37 @@ const AboutAndSpeakers = () => {
               </div>
             </div>
           </div>
+          <div className="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
+        <div className="speakers-text-info">
+          <h2 className="mb-4">
+            Our <u className="text-info">Team</u>
+          </h2>
+          <p>Meet the dedicated team of educators and leaders who guide our students to success at Apex International School.</p>
         </div>
+      </div>
+          <div className="col-lg-6 col-12 mt-5">
+        <div className="speakers-thumb">
+          <Image
+            src="/images/avatar/portrait-good-looking-brunette-young-asian-woman.jpg"
+            className="img-fluid speakers-image"
+            alt="Director"
+            width={400}
+            height={400}
+          />
+          <small className="speakers-featured-text">Director</small>
+          <div className="speakers-info">
+            <h5 className="speakers-title mb-0">Dr. Ananya Deshmukh</h5>
+            <p className="speakers-text mb-0">Director of Apex International School</p>
+            <ul className="social-icon">
+              <li><a href="#" className="social-icon-link bi-facebook"></a></li>
+              <li><a href="#" className="social-icon-link bi-instagram"></a></li>
+              <li><a href="#" className="social-icon-link bi-linkedin"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+
       </div>
 
     </div>
