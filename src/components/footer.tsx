@@ -3,12 +3,12 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <section className="venue section-padding" id="section_6">
+      <section className="venue section-padding" id="section_6"  style={{fontFamily: 'Georgia, serif'}}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 col-12">
-              <h2 className="mb-5">
-                Our <u className="text-info">Campus Location</u>
+            <div className="col-lg-12 col-12" style={{color:'#ef8a21'}}>
+              <h2 className="mb-5" >
+                Our <u className="text-info" style={{color:'#1e3c72'}}>Campus Location</u>
               </h2>
             </div>
             <div className="col-lg-6 col-12">
@@ -57,7 +57,7 @@ const Footer = () => {
       
 
       {/* Footer Section */}
-      <footer style={{ backgroundColor: "#fff" }}>
+      <footer style={{ backgroundColor: "#fff",fontFamily: 'Georgia, serif' }} >
       <div className="container p-4">
         <div className="row">
           {/* Footer Content */}

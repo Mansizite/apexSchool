@@ -14,12 +14,12 @@ export default function EarlyGlimpsesPage() {
       <div className="container">
         <div className="row">
           <div className="col-lg-10 col-12">
-            <h2 className="mb-4">
+            <h2 className="mb-4" style={{fontFamily:'Georgia, serif'}}>
               Early <u className="text-info">Glimpses</u>
             </h2>
           </div>
 
-          <div className="col-lg-6 col-12">
+          <div className="col-lg-6 col-12" style={{fontFamily:'Georgia, serif'}}>
            
             <p>
               To provide quality and comprehensive educational opportunities for all students 

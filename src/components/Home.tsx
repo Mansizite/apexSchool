@@ -19,7 +19,7 @@ const Schedule = () => {
   return (
     <>
       {/* Why Choose Us Section */}
-      <section className="why-choose-us section-padding" id="section_4">
+      <section className="why-choose-us section-padding" id="section_4" style={{ fontFamily: 'Georgia, serif' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-12">

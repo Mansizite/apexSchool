@@ -19,7 +19,7 @@ const Aboutus = () => {
         {/* About Content on the right side */}
         <div className="col-md-6">
           <h1 className="fw-bold">About Us</h1>
-          <p className="lead text-dark" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+          <p className="lead text-dark" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' ,fontFamily:'sans-serif'}}>
   Apex International School is a nurturing and progressive institution dedicated to providing
   a holistic education. Our focus is on fostering creativity, critical thinking, and a love for learning in our students.
   We believe in the importance of academic excellence, balanced with personal growth and emotional intelligence.

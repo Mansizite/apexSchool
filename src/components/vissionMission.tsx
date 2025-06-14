@@ -5,18 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function VisionMissionPage() {
   return (
-    <section className="bg-light py-5" id="section_4">
+    <section className="bg-light py-5" id="section_4" style={{fontFamily:'Georgia, serif'}}>
       <div className="container">
         {/* Header */}
-        <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold">
-            Our <span className="text-primary">Vision</span> & <span className="text-info">Mission</span>
-          </h2>
-          <p className="lead text-muted">
-            Shaping learners into leaders through quality education and values.
-          </p>
-        </div>
-
+      <div className="col-lg-10 col-12">
+        <h2 className="mb-4">
+          Vision &<u className="text-info">Mission</u>
+        </h2>
+      </div>
         {/* Cards Section */}
         <div className="row g-4">
           {/* Mission */}

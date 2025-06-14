@@ -47,16 +47,16 @@ const HeroSection = () => {
     <div className="row">
       <div className="col-lg-5 col-12 m-auto">
         <div className="hero-text">
-          <h1 className="text-white mb-4">
+          <h1 className="text-white mb-4" style={{fontFamily:'Georgia, serif'}}>
             <u className="text-info">Apex International</u> School
           </h1>
 
-          <p className="hero-description text-white">
+          <p className="hero-description text-white" style={{fontFamily:'Georgia, serif'}}>
             Welcome to Apex International School, where we inspire future leaders through academic excellence, innovation, and personal growth. Our dedicated educators foster a nurturing environment that encourages every student potential to shine.
           </p>
 
           <div className="d-flex justify-content-center align-items-center">
-            <span className="date-text">Established in 1995</span>
+            
             <span className="location-text">Orchid Phase II Charholi BK 412105</span>
           </div>
 
@@ -78,7 +78,7 @@ const HeroSection = () => {
 
 
       {/* Highlights Section */}
-      <section className="highlight">
+      <section className="highlight" style={{fontFamily:'Georgia, serif'}}>
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-12">

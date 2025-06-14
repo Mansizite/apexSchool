@@ -49,7 +49,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <span style={{ color: '#000', marginLeft: '80px' }}>
+        <span style={{ color: 'orange', marginLeft: '80px', fontFamily:'Georgia, serif'}}>
           Apex International School
         </span>
       </div>
