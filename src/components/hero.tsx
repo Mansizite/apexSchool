@@ -47,8 +47,8 @@ const HeroSection = () => {
     <div className="row">
       <div className="col-lg-5 col-12 m-auto">
         <div className="hero-text">
-          <h1 className="text-white mb-4" style={{fontFamily:'Georgia, serif'}}>
-            <u className="text-info">Apex International</u> School
+          <h1 className=" mb-4"  style={{fontFamily:'Georgia, serif',color:'#ff6600'}}>
+            Apex  International  School
           </h1>
 
           <p className="hero-description text-white" style={{fontFamily:'Georgia, serif'}}>

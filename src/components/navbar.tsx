@@ -24,7 +24,7 @@ const Navbar = () => {
         className="school-header text-center fs-2 fw-bold sticky-header"
         style={{
           backgroundColor: 'white',
-          color: 'black',
+          color: '#ff6600',
           padding: '10px 0',
           position: 'sticky',
           top: '0',
@@ -49,9 +49,13 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <span style={{ color: 'orange', marginLeft: '80px', fontFamily:'Georgia, serif'}}>
-          Apex International School
-        </span>
+         <div className="row justify-content-center ">
+          <div className=" text-center">
+            <h2 className=" text-orange fw-bold">
+           Apex International School
+            </h2>
+          </div>
+        </div>
       </div>
 
       {/* Navbar */}
