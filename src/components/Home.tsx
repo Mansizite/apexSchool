@@ -138,7 +138,7 @@
 // export default Schedule;
 'use client';
 
-import Link from 'next/link';
+
 import {
   AcademicCapIcon,
   LockClosedIcon,
@@ -217,11 +217,11 @@ const Schedule = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="call-to-action section-padding bg-dark">
+      <section className="call-to-action section-padding bg-primary">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-12">
-              <h2 className="mb-4" style={{ fontFamily: 'Georgia, serif' ,color:'#1e3c72'}}>
+              <h2 className="mb-4" style={{ fontFamily: 'Georgia, serif' ,color:'orange' }}>
                 Have Any Questions?
               </h2>
               <p className="text-white" style={{ fontFamily: 'Georgia, serif' }}>
@@ -230,9 +230,9 @@ const Schedule = () => {
             </div>
 
             <div className="col-lg-3 col-12 ms-lg-auto mt-4 mt-lg-0">
-              <Link href="#section_5" className="btn btn-warning text-white px-4 py-2 rounded-pill">
+              {/* <Link href="#section_5" className="btn btn-warning text-white px-4 py-2 rounded-pill">
                 Inquire Now
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

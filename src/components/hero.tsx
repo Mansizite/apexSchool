@@ -36,7 +36,7 @@
 
 
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 const HeroSection = () => {
   return (
@@ -55,10 +55,10 @@ const HeroSection = () => {
             Welcome to Apex International School, where we inspire future leaders through academic excellence, innovation, and personal growth. Our dedicated educators foster a nurturing environment that encourages every student potential to shine.
           </p>
 
-          <div className="d-flex justify-content-center align-items-center">
+          {/* <div className="d-flex justify-content-center align-items-center">
             
             <span className="location-text">Orchid Phase II Charholi BK 412105</span>
-          </div>
+          </div> */}
 
           <Link href="#section_2" passHref>
             <div className="custom-link bi-arrow-down arrow-icon"></div>
@@ -76,67 +76,7 @@ const HeroSection = () => {
   </div>
 </section>
 
-
-      {/* Highlights Section */}
-      <section className="highlight" style={{fontFamily:'Georgia, serif'}}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-12">
-              <div className="highlight-thumb">
-                <Image
-                  src="https://theapexschool.in/Website/assets/img/slide/ApexBuilding.jpg"
-                  className="highlight-image img-fluid"
-                  alt="2019 Highlights"
-                  width={400} // Update the width and height accordingly
-                  height={300}
-                />
-
-                <div className="highlight-info">
-                  <h3 className="highlight-title">School Camps</h3>
-
-                  <a href="#" className="bi-youtube highlight-icon" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-12">
-              <div className="highlight-thumb">
-                <Image
-                  src="https://theapexschool.in/Website/assets/img/slide/ApexBuilding.jpg"
-                  className="highlight-image img-fluid"
-                  alt="2020 Highlights"
-                  width={400}
-                  height={300}
-                />
-
-                <div className="highlight-info">
-                  <h3 className="highlight-title">Annual School Play 2021</h3>
-
-                  <a href="#" className="bi-youtube highlight-icon" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-12">
-              <div className="highlight-thumb">
-                <Image
-                  src="https://theapexschool.in/Website/assets/img/slide/ApexBuilding.jpg"
-                  className="highlight-image img-fluid"
-                  alt="2021 Highlights"
-                  width={400}
-                  height={300}
-                />
-
-                <div className="highlight-info">
-                  <h3 className="highlight-title">School Cultural Fest 2020</h3>
-
-                  <a href="#" className="bi-youtube highlight-icon" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 };
