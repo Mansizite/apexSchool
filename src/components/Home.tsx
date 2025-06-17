@@ -164,7 +164,7 @@ const Schedule = () => {
               {/* Header */}
               <div className="row justify-content-center mb-4">
                 <div className="col-lg-8 text-center">
-                  <h2 className="mb-4 text-orange fw-bold border-bottom pb-2 d-inline-block">
+                  <h2 className="mb-4 fw-bold border-bottom pb-2 d-inline-block" style={{color:'#1e3c72'}}>
                     Why Choose Apex International School ?
                   </h2>
                 </div>
@@ -221,7 +221,7 @@ const Schedule = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-12">
-              <h2 className="text-orange mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+              <h2 className="mb-4" style={{ fontFamily: 'Georgia, serif' ,color:'#1e3c72'}}>
                 Have Any Questions?
               </h2>
               <p className="text-white" style={{ fontFamily: 'Georgia, serif' }}>
@@ -245,7 +245,7 @@ const Schedule = () => {
             {/* Header */}
             <div className="row justify-content-center mb-4">
               <div className="col-lg-8 text-center">
-                <h2 className="mb-4 text-orange fw-bold border-bottom pb-2 d-inline-block">
+                <h2 className="mb-4  fw-bold border-bottom pb-2 d-inline-block" style={{color:'#1e3c72'}}>
                   Our Facilities
                 </h2>
               </div>

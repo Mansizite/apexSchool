@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Aboutus = () => {
   return (
-    <div className="container mt-3">
+    <div className="container mt-3" style={{color:'#1e3c72'}}>
       <div className="row align-items-center">
         {/* Image on the left side */}
         <div className="col-md-5">

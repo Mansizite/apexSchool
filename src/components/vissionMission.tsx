@@ -75,7 +75,7 @@ export default function VisionMissionPage() {
         {/* Section Header */}
         <div className="row justify-content-center mb-4">
           <div className="col-lg-8 text-center">
-            <h2 className="mb-4 text-orange fw-bold border-bottom pb-2 d-inline-block">
+            <h2 className="mb-4  fw-bold border-bottom pb-2 d-inline-block" style={{color:'#1e3c72'}}>
               Vision & Mission
             </h2>
           </div>

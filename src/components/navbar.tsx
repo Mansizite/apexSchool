@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
          <div className="row justify-content-center ">
           <div className=" text-center">
-            <h2 className=" text-orange fw-bold">
+            <h2 className="  fw-bold" style={{color:'#1e3c72'}}>
            Apex International School
             </h2>
           </div>

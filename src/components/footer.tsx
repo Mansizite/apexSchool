@@ -128,7 +128,7 @@ const Footer = () => {
           {/* Centered Header */}
          <div className="row justify-content-center mb-4">
           <div className="col-lg-8 text-center">
-            <h2 className="mb-4 text-orange fw-bold border-bottom pb-2 d-inline-block">
+            <h2 className="mb-4 fw-bold border-bottom pb-2 d-inline-block" style={{color:'#1e3c72'}}>
               Our Campus Location
             </h2>
           </div>
@@ -151,7 +151,7 @@ const Footer = () => {
             <div className="col-lg-6 col-12 mt-5 mt-lg-0">
               <div className="venue-thumb bg-white shadow-lg">
                 <div className="venue-info-title">
-                  <h2 className="text-orange mb-0">Apex School</h2>
+                  <h2 className=" mb-0" style={{color:'white'}}>Apex School</h2>
                 </div>
                 <div className="venue-info-body">
                   <h4 className="d-flex">
@@ -185,7 +185,7 @@ const Footer = () => {
           <div className="row">
             {/* School Info */}
             <div className="col-lg-6 col-md-12 mb-4">
-              <h5 className="mb-3" style={{ letterSpacing: "2px", color: "orange" }}>
+              <h5 className="mb-3" style={{ letterSpacing: "2px", color:'#1e3c72' }}>
                 Apex International School
               </h5>
               <p>
@@ -196,7 +196,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div className="col-lg-3 col-md-6 mb-4">
-              <h5 className="mb-3" style={{ letterSpacing: "2px", color: "orange" }}>Quick Links</h5>
+              <h5 className="mb-3" style={{ letterSpacing: "2px" }}>Quick Links</h5>
               <ul className="list-unstyled mb-0">
                 <li className="mb-1">
                   <a href="#" style={{ color: "#4f4f4f" }}>Admissions</a>
