@@ -105,7 +105,7 @@ const Navbar = () => {
   return (
     <header>
       {/* School Header */}
-      <div className="py-0 border-bottom text-center" style={{ fontFamily: 'Georgia, serif' }}>
+      <div className="py-2 border-bottom text-center" style={{ fontFamily: 'Georgia, serif' }}>
         <div className="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
           <Link href="/" className="d-block">
             <Image
@@ -122,7 +122,7 @@ const Navbar = () => {
       </div>
 
       {/* Bootstrap Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#1e3c72', fontFamily: 'Georgia, serif' }}>
+      <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#1e3c72', fontFamily: 'Georgia, serif',marginTop:'-12px' }}>
         <div className="container-fluid">
           <button
             className="navbar-toggler"

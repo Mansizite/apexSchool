@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const MpdPage = () => {
   return (
     <div className="container my-5" style={{ fontFamily: 'Georgia, serif' }}>
-      <h2 className="text-center mb-4" style={{ color: '#1e3c72' }}>Mandatory Public Disclosure (APPENDIX - IX)</h2>
+      <h2 className="text-center mb-4 fw-bold font-thin" style={{ color: '#1e3c72' }}>Mandatory Public Disclosure (APPENDIX - IX)</h2>
 
       {/* Section A: General Information */}
       <div className="card mb-4 shadow-sm">
