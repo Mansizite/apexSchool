@@ -1,91 +1,474 @@
+
+// 'use client';
+
+// import React, { useState } from 'react';
+// import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
+// import Image from 'next/image';
+// import { Carousel } from 'react-bootstrap'; 
+
+// const heroImages = [
+//   { src: '/images/colorday/IMG-20250619-WA0045.jpg', caption: 'Joyful Colors All Around' },
+//   { src: '/images/roleplay/IMG-20250619-WA0024.jpg', caption: 'Students in Action' },
+//   { src: '/images/dindiCelebration/IMG-20250619-WA0051.jpg', caption: 'Welcome to Our Gallery' },
+// ];
+
+// const galleryItems = [
+//   {
+//     id: 1,
+//     title: 'Dindi Celebration',
+//     description: 'Celebrating traditions with joy and unity',
+//     category: 'Cultural',
+//     folder: 'dindiCelebration',
+//     images: [
+//       'IMG-20250619-WA0040.jpg',
+//       'IMG-20250619-WA0047.jpg',
+//       'IMG-20250619-WA0048.jpg',
+//       'IMG-20250619-WA0049.jpg',
+//       'IMG-20250619-WA0050.jpg',
+//       'IMG-20250619-WA0051.jpg',
+//     ],
+//   },
+//   {
+//     id: 3,
+//     title: 'Color Day Celebration',
+//     description: 'A day filled with vibrant colors and cheerful activities',
+//     category: 'Events',
+//     folder: 'colorday',
+//     images: [
+//       'IMG-20250619-WA0022.jpg',
+//       'IMG-20250619-WA0021.jpg',
+//       'IMG-20250619-WA0036.jpg',
+//       'IMG-20250619-WA0041.jpg',
+//       'IMG-20250619-WA0042.jpg',
+//       'IMG-20250619-WA0045.jpg',
+//       'IMG-20250619-WA0054.jpg',
+//       'IMG-20250619-WA0055.jpg',
+//     ],
+//   },
+//   {
+//     id: 4,
+//     title: 'Role Play Competition',
+//     description: 'Students showcasing talent through creative enactments',
+//     category: 'Co-curricular',
+//     folder: 'roleplay',
+//     images: [
+//       'IMG-20250619-WA0008.jpg',
+//       'IMG-20250619-WA0009.jpg',
+//       'IMG-20250619-WA0010.jpg',
+//       'IMG-20250619-WA0011.jpg',
+//       'IMG-20250619-WA0012.jpg',
+//       'IMG-20250619-WA0020.jpg',
+//       'IMG-20250619-WA0024.jpg',
+//     ],
+//   },
+// ];
+
+// const SchoolGallery = () => {
+//   const [showModal, setShowModal] = useState(false);
+//   const [selectedItem, setSelectedItem] = useState<any>(null);
+
+//   const handleOpenModal = (item: any) => {
+//     setSelectedItem(item);
+//     setShowModal(true);
+//   };
+
+//   const handleCloseModal = () => {
+//     setSelectedItem(null);
+//     setShowModal(false);
+//   };
+
+//   return (
+//     <div>
+//       {/* Hero Carousel Section */}
+   
+     
+// <section className="hero-carousel">
+//   <Carousel fade indicators={true} controls={false} interval={3000}>
+//     {heroImages.map((hero, index) => (
+//       <Carousel.Item key={index}>
+//         <div className="position-relative hero-slide">
+//           <Image
+//             src={hero.src}
+//             alt={`Hero ${index}`}
+//             fill
+//             priority
+//             style={{ objectFit: 'cover' }}
+//           />
+//           {/* Gradient Overlay */}
+//           <div className="hero-overlay" />
+//           {/* Text Content */}
+//    <Container className="hero-caption-top text-white px-4 py-2">
+//   <h1 className="headline-text animate-slide-in">{hero.caption}</h1>
+// </Container>
+
+//         </div>
+//       </Carousel.Item>
+//     ))}
+//   </Carousel>
+
+//   <style jsx>{`
+//     .hero-slide {
+//       height: 70vh;
+//     }
+
+//     .hero-overlay {
+//       position: absolute;
+//       top: 1px;
+//       left: 0;
+//       height: 100%;
+//       width: 100%;
+    
+//       z-index: 1;
+//     }
+
+//     .hero-carousel .carousel-item {
+//       height: 70vh;
+//     }
+
+//     .animate-fade-in {
+//       animation: fadeInUp 1s ease-out forwards;
+//       opacity: 0;
+//     }
+
+//     @keyframes fadeInUp {
+//       from {
+//         opacity: 0;
+//         transform: translateY(20px);
+//       }
+//       to {
+//         opacity: 1;
+//         transform: translateY(0);
+//       }
+//     }
+
+//     @media (max-width: 768px) {
+//       .hero-slide {
+//         height: 50vh;
+//       }
+
+//       .display-4 {
+//         font-size: 2rem;
+//       }
+
+//     }
+//       .hero-slide {
+//     height: 70vh;
+//     position: relative;
+//   }
+
+//   .hero-overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.1));
+//     z-index: 1;
+//   }
+
+//   .hero-caption-top {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 2;
+//     background: linear-gradient(to right, #1e3c72ee, #2a5298ee);
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+//     border-bottom: 4px solid #ffc107;
+//     text-align: center;
+//   }
+
+//   .headline-text {
+//     font-size: 2.5rem;
+//     font-weight: 700;
+//     letter-spacing: 1px;
+//     color: #fff;
+//     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+//   }
+
+//   .animate-slide-in {
+//     animation: slideInDown 1s ease-out forwards;
+//     opacity: 0;
+//   }
+
+//   @keyframes slideInDown {
+//     from {
+//       opacity: 0;
+//       transform: translateY(-40px);
+//     }
+//     to {
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+//   }
+
+//   @media (max-width: 768px) {
+//     .hero-slide {
+//       height: 50vh;
+//     }
+
+//     .headline-text {
+//       font-size: 1.5rem;
+//     }
+//   }
+      
+//   `}</style>
+// </section>
+
+
+//       {/* Gallery Section */}
+//       <section className="py-5 bg-light">
+//         <Container>
+//           <div className="text-center mb-5">
+//             <h2 className="display-5 fw-bold" style={{ color: '#1e3c72' }}>
+//               Explore Our Campus
+//             </h2>
+//             <p className="lead text-muted">Discover our vibrant learning community through these highlights</p>
+//             <div className="border-bottom" style={{ borderColor: '#1e3c72', width: '25%', margin: '1rem auto' }} />
+//           </div>
+
+//           <Row xs={1} md={2} lg={4} className="g-4">
+//             {galleryItems.map((item) => (
+//               <Col key={item.id}>
+//                 <Card className="h-100 shadow-sm border-0">
+//                   <div className="bg-secondary position-relative" style={{ height: '200px' }}>
+                   
+//                     <Image
+//   src={`/images/${item.folder}/${item.images[0]}`}
+//   alt={item.title}
+//   fill
+//   style={{ objectFit: 'cover' }}
+// />
+
+//                   </div>
+
+//                   <Card.Body className="d-flex flex-column" style={{ color: '#1e3c72' }}>
+//                     <Card.Title className="fs-5">{item.title}</Card.Title>
+//                     <Card.Subtitle className="mb-2">
+//                       <span className="badge bg-primary">{item.category}</span>
+//                     </Card.Subtitle>
+//                     <Card.Text className="flex-grow-1 text-muted small">{item.description}</Card.Text>
+//                     <Button
+//                       variant="outline-primary"
+//                       className="mt-auto"
+//                       style={{ color: '#1e3c72', borderColor: '#1e3c72' }}
+//                       onClick={() => handleOpenModal(item)}
+//                     >
+//                       View Images <i className="bi bi-images ms-2"></i>
+//                     </Button>
+//                   </Card.Body>
+//                 </Card>
+//               </Col>
+//             ))}
+//           </Row>
+//         </Container>
+//       </section>
+
+//       {/* Modal with All Images in Grid */}
+//       <Modal show={showModal} onHide={handleCloseModal} size="xl" centered>
+//         <Modal.Header closeButton>
+//           <Modal.Title>{selectedItem?.title}</Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>
+//           <p className="text-muted">{selectedItem?.description}</p>
+//           <Row xs={2} md={3} lg={4} className="g-3">
+//             {selectedItem?.images.map((img: string, index: number) => (
+//               <Col key={index}>
+//                 <div className="position-relative" style={{ height: '200px' }}>
+//                   <Image
+//                     src={`/images/${selectedItem.folder}/${img}`}
+//                     alt={`${selectedItem.title} ${index + 1}`}
+//                     fill
+//                     style={{ objectFit: 'cover', borderRadius: '8px' }}
+//                   />
+//                 </div>
+//               </Col>
+//             ))}
+//           </Row>
+//         </Modal.Body>
+//       </Modal>
+//     </div>
+//   );
+// };
+
+// export default SchoolGallery;
 'use client';
 
-import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
 import Image from 'next/image';
+import { Carousel } from 'react-bootstrap';
+
+// Define the type for a gallery item
+interface GalleryItem {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  folder: string;
+  images: string[];
+}
+
+const heroImages = [
+  { src: '/images/colorday/IMG-20250619-WA0045.jpg', caption: 'Joyful Colors All Around' },
+  { src: '/images/roleplay/IMG-20250619-WA0024.jpg', caption: 'Students in Action' },
+  { src: '/images/dindiCelebration/IMG-20250619-WA0051.jpg', caption: 'Welcome to Our Gallery' },
+];
+
+const galleryItems: GalleryItem[] = [
+  {
+    id: 1,
+    title: 'Dindi Celebration',
+    description: 'Celebrating traditions with joy and unity',
+    category: 'Cultural',
+    folder: 'dindiCelebration',
+    images: [
+      'IMG-20250619-WA0040.jpg',
+      'IMG-20250619-WA0047.jpg',
+      'IMG-20250619-WA0048.jpg',
+      'IMG-20250619-WA0049.jpg',
+      'IMG-20250619-WA0050.jpg',
+      'IMG-20250619-WA0051.jpg',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Color Day Celebration',
+    description: 'A day filled with vibrant colors and cheerful activities',
+    category: 'Events',
+    folder: 'colorday',
+    images: [
+      'IMG-20250619-WA0022.jpg',
+      'IMG-20250619-WA0021.jpg',
+      'IMG-20250619-WA0036.jpg',
+      'IMG-20250619-WA0041.jpg',
+      'IMG-20250619-WA0042.jpg',
+      'IMG-20250619-WA0045.jpg',
+      'IMG-20250619-WA0054.jpg',
+      'IMG-20250619-WA0055.jpg',
+    ],
+  },
+  {
+    id: 4,
+    title: 'Role Play Competition',
+    description: 'Students showcasing talent through creative enactments',
+    category: 'Co-curricular',
+    folder: 'roleplay',
+    images: [
+      'IMG-20250619-WA0008.jpg',
+      'IMG-20250619-WA0009.jpg',
+      'IMG-20250619-WA0010.jpg',
+      'IMG-20250619-WA0011.jpg',
+      'IMG-20250619-WA0012.jpg',
+      'IMG-20250619-WA0020.jpg',
+      'IMG-20250619-WA0024.jpg',
+    ],
+  },
+];
 
 const SchoolGallery = () => {
-  const galleryItems = [
-    {
-      id: 1,
-      title: 'Science Lab',
-      description: 'Students conducting experiments in our state-of-the-art laboratory',
-      category: 'Academics',
-    },
-    {
-      id: 2,
-      title: 'Art Exhibition',
-      description: 'Annual student art showcase featuring creative works',
-      category: 'Arts',
-    },
-    {
-      id: 3,
-      title: 'Sports Day',
-      description: 'Annual inter-house sports competition',
-      category: 'Sports',
-    },
-    {
-      id: 4,
-      title: 'Robotics Club',
-      description: 'Students participating in robotics club activities',
-      category: 'STEM',
-    },
-    {
-      id: 5,
-      title: 'Library',
-      description: 'Students researching in our newly renovated library',
-      category: 'Resources',
-    },
-    {
-      id: 6,
-      title: 'Music Class',
-      description: 'Student orchestra practicing for the spring concert',
-      category: 'Arts',
-    },
-    {
-      id: 7,
-      title: 'Graduation',
-      description: 'Class of 2023 commencement ceremony',
-      category: 'Events',
-    },
-    {
-      id: 8,
-      title: 'Computer Lab',
-      description: 'Students learning coding and digital skills',
-      category: 'Technology',
-    },
-  ];
+  const [showModal, setShowModal] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
+
+  const handleOpenModal = (item: GalleryItem) => {
+    setSelectedItem(item);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedItem(null);
+    setShowModal(false);
+  };
 
   return (
     <div>
-      {/* Hero Section with Featured Photo */}
-      <section className="position-relative" style={{ height: '70vh' }}>
-        {/* Background Image */}
-        <Image
-          src="public/early-glimpse-image.jpg"
-          alt="School Campus"
-          fill
-          style={{ objectFit: 'cover' }}
-          className="opacity-90"
-        />
+      {/* Hero Carousel Section */}
+      <section className="hero-carousel">
+        <Carousel fade indicators controls={false} interval={3000}>
+          {heroImages.map((hero, index) => (
+            <Carousel.Item key={index}>
+              <div className="position-relative hero-slide">
+                <Image
+                  src={hero.src}
+                  alt={`Hero ${index}`}
+                  fill
+                  priority
+                  style={{ objectFit: 'cover' }}
+                />
+                {/* Gradient Overlay */}
+                <div className="hero-overlay" />
+                {/* Text Content */}
+                <Container className="hero-caption-top text-white px-4 py-2">
+                  <h1 className="headline-text animate-slide-in">{hero.caption}</h1>
+                </Container>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
 
-        {/* Dark Overlay */}
-        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-
-        {/* Hero Content */}
-        <Container className="position-relative h-100 d-flex align-items-center">
-          <Row className="justify-content-center">
-            <Col md={8} className="text-center text-white">
-              <h1 className="display-3 fw-bold mb-4">Welcome to Our Gallery</h1>
-            </Col>
-          </Row>
-        </Container>
+        <style jsx>{`
+          .hero-slide {
+            height: 70vh;
+            position: relative;
+          }
+          .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.1));
+            z-index: 1;
+          }
+          .hero-carousel .carousel-item {
+            height: 70vh;
+          }
+          .hero-caption-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            background: linear-gradient(to right, #1e3c72ee, #2a5298ee);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-bottom: 4px solid #ffc107;
+            text-align: center;
+          }
+          .headline-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+          }
+          .animate-slide-in {
+            animation: slideInDown 1s ease-out forwards;
+            opacity: 0;
+          }
+          @keyframes slideInDown {
+            from {
+              opacity: 0;
+              transform: translateY(-40px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (max-width: 768px) {
+            .hero-slide {
+              height: 50vh;
+            }
+            .headline-text {
+              font-size: 1.5rem;
+            }
+          }
+        `}</style>
       </section>
 
       {/* Gallery Section */}
       <section className="py-5 bg-light">
         <Container>
-          {/* Gallery Header */}
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold" style={{ color: '#1e3c72' }}>
               Explore Our Campus
@@ -93,17 +476,19 @@ const SchoolGallery = () => {
             <p className="lead text-muted">
               Discover our vibrant learning community through these highlights
             </p>
-            <div className="border-bottom" style={{ borderColor: '#1e3c72', width: '25%', margin: '1rem auto' }}></div>
+            <div
+              className="border-bottom"
+              style={{ borderColor: '#1e3c72', width: '25%', margin: '1rem auto' }}
+            />
           </div>
 
-          {/* Gallery Grid */}
           <Row xs={1} md={2} lg={4} className="g-4">
             {galleryItems.map((item) => (
               <Col key={item.id}>
                 <Card className="h-100 shadow-sm border-0">
                   <div className="bg-secondary position-relative" style={{ height: '200px' }}>
                     <Image
-                      src={`/school-${item.id}.jpg`}
+                      src={`/images/${item.folder}/${item.images[0]}`}
                       alt={item.title}
                       fill
                       style={{ objectFit: 'cover' }}
@@ -111,43 +496,50 @@ const SchoolGallery = () => {
                   </div>
 
                   <Card.Body className="d-flex flex-column" style={{ color: '#1e3c72' }}>
-                    <Card.Title className="fs-5" style={{ color: '#1e3c72' }}>
-                      {item.title}
-                    </Card.Title>
+                    <Card.Title className="fs-5">{item.title}</Card.Title>
                     <Card.Subtitle className="mb-2">
                       <span className="badge bg-primary">{item.category}</span>
                     </Card.Subtitle>
-                    <Card.Text className="flex-grow-1 text-muted small">
-                      {item.description}
-                    </Card.Text>
+                    <Card.Text className="flex-grow-1 text-muted small">{item.description}</Card.Text>
                     <Button
                       variant="outline-primary"
                       className="mt-auto"
-                      style={{
-                        color: '#1e3c72',
-                        borderColor: '#1e3c72',
-                      }}
+                      style={{ color: '#1e3c72', borderColor: '#1e3c72' }}
+                      onClick={() => handleOpenModal(item)}
                     >
-                      Learn More <i className="bi bi-arrow-right ms-2"></i>
+                      View Images <i className="bi bi-images ms-2"></i>
                     </Button>
                   </Card.Body>
                 </Card>
               </Col>
             ))}
           </Row>
-
-          {/* CTA */}
-          <div className="text-center mt-5">
-            <Button
-              variant="primary"
-              size="lg"
-              style={{ backgroundColor: '#1e3c72', borderColor: '#1e3c72' }}
-            >
-              View Full Gallery <i className="bi bi-images ms-2"></i>
-            </Button>
-          </div>
         </Container>
       </section>
+
+      {/* Modal with All Images in Grid */}
+      <Modal show={showModal} onHide={handleCloseModal} size="xl" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedItem?.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p className="text-muted">{selectedItem?.description}</p>
+          <Row xs={2} md={3} lg={4} className="g-3">
+            {selectedItem?.images.map((img, index) => (
+              <Col key={index}>
+                <div className="position-relative" style={{ height: '200px' }}>
+                  <Image
+                    src={`/images/${selectedItem.folder}/${img}`}
+                    alt={`${selectedItem.title} ${index + 1}`}
+                    fill
+                    style={{ objectFit: 'cover', borderRadius: '8px' }}
+                  />
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };
