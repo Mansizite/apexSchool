@@ -176,11 +176,11 @@ const MpdPage = () => {
         <tbody>
           <tr><td>1</td><td>Manasi Paramdeep Singh Gill</td><td>Principal</td><td>M.Sc. M.Ed. DSM</td></tr>
           <tr><td>2</td><td>Leena Ghrushneshwar Tugade</td><td>Vice Principal</td><td>B.Sc. B.Ed.</td></tr>
-          <tr><td>3</td><td>SONAM RAHUL CHOKHAR</td><td>NTT</td><td>B.A, D.Ed</td></tr>
-          <tr><td>4</td><td>KAJAL ABHIJEET KHEDKAR</td><td>NTT</td><td>B.Com, TTC</td></tr>
-          <tr><td>5</td><td>ALMAS PRAMOD DAHALE</td><td>NTT</td><td>HSC, TTC</td></tr>
-          <tr><td>6</td><td>CHITRA SAMBHAJI HALNOR</td><td>NTT</td><td>B.A, D.Ed</td></tr>
-          <tr><td>7</td><td>SUJATA AMIT MODAK</td><td>NTT</td><td>B.A, D.Ed</td></tr>
+          <tr><td>3</td><td>Sonam Rahul Chokhar</td><td>NTT</td><td>B.A, D.Ed</td></tr>
+          <tr><td>4</td><td>Kajal Abhijeet Khedkar</td><td>NTT</td><td>B.Com, TTC</td></tr>
+          <tr><td>5</td><td>Almas Pramod Dahale</td><td>NTT</td><td>HSC, TTC</td></tr>
+          <tr><td>6</td><td>Chitra Sambhaji Halnor</td><td>NTT</td><td>B.A, D.Ed</td></tr>
+          <tr><td>7</td><td>Sujata Amit Modak</td><td>NTT</td><td>B.A, D.Ed</td></tr>
           <tr><td>8</td><td>Manisha Ramesh Gaikwad</td><td>PRT</td><td>B.A. B.Ed.</td></tr>
           <tr><td>9</td><td>Jayashree Patil</td><td>PRT</td><td>D.Ed. B.A. MBM</td></tr>
           <tr><td>10</td><td>Sana Jahruddin Mulani</td><td>PRT</td><td>M.Sc, B.Ed.</td></tr>
@@ -197,9 +197,9 @@ const MpdPage = () => {
           <tr><td>21</td><td>Priti Arvind Nagothkar</td><td>PRT</td><td>B.A. D.T.Ed.</td></tr>
           <tr><td>22</td><td>Bhavana Prashant Jade</td><td>PRT</td><td>M.CA, B.A. B.Ed.</td></tr>
           <tr><td>23</td><td>Madhuri Vishal Chavan</td><td>PRT</td><td>M.A. B.Ed</td></tr>
-          <tr><td>24</td><td>SUSHMA DNYANESHWAR DHAGE</td><td>PRT</td><td>B.Com B.Ed.</td></tr>
-          <tr><td>25</td><td>VRUSHALI ABHIJEET MALWADE</td><td>PRT</td><td>M.Sc. B.Ed.</td></tr>
-          <tr><td>26</td><td>GAURI SUNIL BHALEKAR</td><td>PRT</td><td>M.Sc. B.Ed.</td></tr>
+          <tr><td>24</td><td>Sushma Dnyaneshwar Dhage</td><td>PRT</td><td>B.Com B.Ed.</td></tr>
+          <tr><td>25</td><td>Vrushali Abhijeet Malwade</td><td>PRT</td><td>M.Sc. B.Ed.</td></tr>
+          <tr><td>26</td><td>Gauri Sunil Bhalekar</td><td>PRT</td><td>M.Sc. B.Ed.</td></tr>
           <tr><td>27</td><td>Pooja Uday Darekar</td><td>PRT</td><td>MCA</td></tr>
           <tr><td>28</td><td>Mohini Kaur Kirpal Singh Ladhad</td><td>PRT</td><td>B.A, D.Ed.</td></tr>
           <tr><td>29</td><td>Sunita Bharat Dalve</td><td>PRT</td><td>B.Sc.</td></tr>
