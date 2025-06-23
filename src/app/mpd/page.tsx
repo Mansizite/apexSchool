@@ -96,13 +96,13 @@ const MpdPage = () => {
           <table className="table table-bordered">
             <tbody>
               <tr><td>1</td><td>PRINCIPAL</td><td>Manasi Paramdeep Singh Gill</td></tr>
-              <tr><td>2</td><td>TOTAL NO. OF TEACHERS</td><td>---</td></tr>
+              <tr><td>2</td><td>TOTAL NO. OF TEACHERS</td><td>42</td></tr>
               <tr><td></td><td>PGT</td><td>0</td></tr>
-              <tr><td></td><td>TGT</td><td>---</td></tr>
-              <tr><td></td><td>PRT</td><td>---</td></tr>
+              <tr><td></td><td>TGT</td><td>7</td></tr>
+              <tr><td></td><td>PRT</td><td>22</td></tr>
               <tr><td>3</td><td>TEACHERS SECTION RATIO</td><td>1:1.5</td></tr>
               <tr><td>4</td><td>DETAILS OF SPECIAL EDUCATOR</td><td>-</td></tr>
-              <tr><td>5</td><td>DETAILS OF COUNSELLOR AND WELLNESS TEACHER</td><td>-</td></tr>
+              <tr><td>5</td><td>DETAILS OF COUNSELLOR AND WELLNESS TEACHER</td><td>Sheetal Tushar Barathe</td></tr>
             </tbody>
           </table>
 
@@ -111,7 +111,7 @@ const MpdPage = () => {
             <thead className="table-light">
               <tr><th>YEAR</th><th>NO. OF REGISTERED STUDENTS</th><th>NO. PASSED</th><th>PASS %</th><th>REMARKS</th></tr>
             </thead>
-            <tbody><tr><td>--</td><td>--</td><td>--</td><td>--</td><td>Not Applicable</td></tr></tbody>
+            <tbody><tr><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr></tbody>
           </table>
 
           <h6 className="mt-4">RESULT CLASS: XII</h6>
@@ -119,7 +119,7 @@ const MpdPage = () => {
             <thead className="table-light">
               <tr><th>YEAR</th><th>NO. OF REGISTERED STUDENTS</th><th>NO. PASSED</th><th>PASS %</th><th>REMARKS</th></tr>
             </thead>
-            <tbody><tr><td>--</td><td>-</td><td>--</td><td>--</td><td>Not Applicable</td></tr></tbody>
+            <tbody><tr><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr></tbody>
           </table>
         </div>
       </div>
