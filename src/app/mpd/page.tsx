@@ -59,7 +59,7 @@ const MpdPage = () => {
               <tr><td>2</td><td>COPIES OF SOCIETIES / TRUST / COMPANY REGISTRATION / RENEWAL CERTIFICATE, AS APPLICABLE</td><td><ViewButton href="Registration-certificate.pdf" /></td></tr>
               <tr><td>3</td><td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td><td><ViewButton href="No-Objection-Certificate.pdf" /></td></tr>
               <tr><td>4</td><td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td><td><ViewButton href="b-section-4.pdf" /></td></tr>
-              <tr><td>5</td><td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td><td><ViewButton href="/pdfs/building-safety.pdf" /></td></tr>
+              <tr><td>5</td><td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td><td><ViewButton href="building.pdf" /></td></tr>
               <tr><td>6</td><td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td><td><ViewButton href="Fire-Safety.pdf" /></td></tr>
               <tr><td>7</td><td>COPY OF SELF CERTIFICATION BY SCHOOL</td><td><ViewButton href="/pdfs/self-certification.pdf" /></td></tr>
               <tr><td>8</td><td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td><td><ViewButton href="b-section-8.pdf" /></td></tr>
