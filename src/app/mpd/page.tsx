@@ -55,7 +55,7 @@ const MpdPage = () => {
               <tr><th>SR No.</th><th>DOCUMENTS / INFORMATION</th><th>UPLOADED DOCUMENTS</th></tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td>COPIES OF AFFILIATION / UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IFANY</td><td><ViewButton href="/pdfs/affiliation-letter.pdf" /></td></tr>
+              <tr><td>1</td><td>COPIES OF AFFILIATION / UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td><td><ViewButton href="/pdfs/affiliation-letter.pdf" /></td></tr>
               <tr><td>2</td><td>COPIES OF SOCIETIES / TRUST / COMPANY REGISTRATION / RENEWAL CERTIFICATE, AS APPLICABLE</td><td><ViewButton href="Registration-certificate.pdf" /></td></tr>
               <tr><td>3</td><td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td><td><ViewButton href="No-Objection-Certificate.pdf" /></td></tr>
               <tr><td>4</td><td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td><td><ViewButton href="b-section-4.pdf" /></td></tr>
