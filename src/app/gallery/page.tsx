@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
 import Image from 'next/image';
-import { Carousel } from 'react-bootstrap';
+
 
 // Define the type for a gallery item
 interface GalleryItem {
@@ -16,13 +16,7 @@ interface GalleryItem {
   images: string[];
 }
 
-const heroImages = [
-  { src: '/images/annualday/PKS_2233.JPG', caption: 'Annual Day Celebrations' },
-  { src: '/images/annualday/PKS_2219.JPG', caption: 'Honoring Talent and Dedication' },
-  { src: '/images/annualday/PKS_2369.JPG', caption: 'Capturing Memories on Stage' },
-  { src: '/images/roleplay/IMG-20250619-WA0024.jpg', caption: 'Students in Action' },
-  { src: '/images/dindiCelebration/IMG-20250619-WA0051.jpg', caption: 'Welcome to Our Gallery' },
-];
+
 
 const galleryItems: GalleryItem[] = [
   {
