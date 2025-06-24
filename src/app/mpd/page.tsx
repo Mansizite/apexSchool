@@ -62,7 +62,7 @@ const MpdPage = () => {
               <tr><td>5</td><td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td><td><ViewButton href="building.pdf" /></td></tr>
               <tr><td>6</td><td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td><td><ViewButton href="Fire-Safety.pdf" /></td></tr>
               <tr><td>7</td><td>COPY OF SELF CERTIFICATION BY SCHOOL</td><td><ViewButton href="/pdfs/self-certification.pdf" /></td></tr>
-              <tr><td>8</td><td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td><td><ViewButton href="water-sanitary.pdf" /></td></tr>
+              <tr><td>8</td><td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td><td><ViewButton href="water.pdf" /></td></tr>
               <tr><td>9</td><td>COPY OF WATER TESTING REPORT</td><td><ViewButton href="b-section-9.pdf" /></td></tr>
               <tr><td>10</td><td>COPY OF CERTIFICATE OF LAND (Annex ‘B’ )</td><td><ViewButton href="b-section-10.pdf" /></td></tr>
             </tbody>
