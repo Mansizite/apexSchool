@@ -62,7 +62,7 @@ const MpdPage = () => {
               <tr><td>5</td><td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td><td><ViewButton href="building.pdf" /></td></tr>
               <tr><td>6</td><td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td><td><ViewButton href="Fire-Safety.pdf" /></td></tr>
               <tr><td>7</td><td>COPY OF SELF CERTIFICATION BY SCHOOL</td><td><ViewButton href="/pdfs/self-certification.pdf" /></td></tr>
-              <tr><td>8</td><td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td><td><ViewButton href="b-section-8.pdf" /></td></tr>
+              <tr><td>8</td><td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td><td><ViewButton href="water-sanitary.pdf" /></td></tr>
               <tr><td>9</td><td>COPY OF WATER TESTING REPORT</td><td><ViewButton href="b-section-9.pdf" /></td></tr>
               <tr><td>10</td><td>COPY OF CERTIFICATE OF LAND (Annex ‘B’ )</td><td><ViewButton href="b-section-10.pdf" /></td></tr>
             </tbody>
@@ -79,10 +79,10 @@ const MpdPage = () => {
               <tr><th>SR No.</th><th>DOCUMENTS / INFORMATION</th><th>UPLOADED DOCUMENTS</th></tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><ViewButton href="/pdfs/fee-structure.pdf" /></td></tr>
+              <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><ViewButton href="fee-structure.pdf" /></td></tr>
               <tr><td>2</td><td>ANNUAL ACADEMIC CALENDER</td><td><ViewButton href="Academic_Calendar.pdf" /></td></tr>
-              <tr><td>3</td><td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td><td><ViewButton href="smc.pdf" /></td></tr>
-              <tr><td>4</td><td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td><td><ViewButton href="PTA.pdf" /></td></tr>
+              <tr><td>3</td><td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td><td><ViewButton href="SMC1.pdf" /></td></tr>
+              <tr><td>4</td><td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td><td><ViewButton href="PTA1.pdf" /></td></tr>
               <tr><td>5</td><td>LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABILITY</td><td><ViewButton href="/pdfs/board-results.pdf" /></td></tr>
             </tbody>
           </table>

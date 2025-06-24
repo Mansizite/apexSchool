@@ -14,8 +14,9 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+       <EarlyGlimpsesPage/>
       <Faci />
-      <EarlyGlimpsesPage/>
+     
       <VisionMissionPage/>
       <Home1 />
       <Footer /> {/* Add the Footer component here */}

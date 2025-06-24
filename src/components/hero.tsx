@@ -48,7 +48,6 @@
 //           height: '100%',
 //           backgroundColor: 'rgba(0, 0, 0, 0.55)',
 //           zIndex: 2,
-          
 //         }}
 //       />
 
@@ -56,7 +55,14 @@
 //       <div className="container position-relative" style={{ zIndex: 3 }}>
 //         <div className="row justify-content-center">
 //           <div className="col-lg-8 text-center">
-//             <h1 className="mb-4" style={{ fontFamily: 'Georgia, serif', color: 'white', fontSize: '2.5rem' }}>
+//             <h1
+//               className="mb-4"
+//               style={{
+//                 fontFamily: 'Georgia, serif',
+//                 color: 'white',
+//                 fontSize: '2.5rem',
+//               }}
+//             >
 //               Apex International School
 //             </h1>
 //             <p
@@ -70,10 +76,13 @@
 //             >
 //               Welcome to Apex International School, where we inspire future leaders through academic excellence,
 //               innovation, and personal growth. Our dedicated educators foster a nurturing environment that encourages
-//               every student's potential to shine.
+//               every student&rsquo;s potential to shine.
 //             </p>
 //             <Link href="#section_2" passHref>
-//               <div className="custom-link bi-arrow-down arrow-icon mt-5" style={{ fontSize: '2rem', color: 'blue' }} />
+//               <div
+//                 className="custom-link bi-arrow-down arrow-icon mt-5"
+//                 style={{ fontSize: '2rem', color: 'blue' }}
+//               />
 //             </Link>
 //           </div>
 //         </div>
@@ -84,7 +93,6 @@
 
 // export default HeroSection;
 import Link from 'next/link';
-import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -99,9 +107,9 @@ const HeroSection = () => {
         alignItems: 'center',
       }}
     >
-      {/* Background Image */}
+      {/* Background Video */}
       <div
-        className="image-wrap"
+        className="video-wrap"
         style={{
           position: 'absolute',
           top: 0,
@@ -109,16 +117,23 @@ const HeroSection = () => {
           width: '100%',
           height: '100%',
           zIndex: 1,
+          overflow: 'hidden',
         }}
       >
-        <Image
-          src="/banner.JPG"
-          alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          priority
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        >
+          <source src="/videos/bgvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Dark Overlay */}
@@ -143,7 +158,7 @@ const HeroSection = () => {
               className="mb-4"
               style={{
                 fontFamily: 'Georgia, serif',
-                color: 'white',
+                color: '#ef8a21' ,
                 fontSize: '2.5rem',
               }}
             >
