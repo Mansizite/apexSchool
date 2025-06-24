@@ -72,7 +72,7 @@ const MpdPage = () => {
 
       {/* Section C: Result and Academics */}
       <div className="card mb-4 shadow-sm">
-        <div className="card-header text-white fw-bold" style={{ backgroundColor: '#1e3c72' }}>C : Result and Academics</div>
+        <div className="card-header text-white fw-bold" style={{ backgroundColor: '#1e3c72' }}>C : Result and Academics</div>+
         <div className="card-body">
           <table className="table table-bordered">
             <thead className="table-light">
@@ -132,7 +132,7 @@ const MpdPage = () => {
             <tbody>
               <tr><td>1</td><td>TOTAL CAMPUS AREA OF THE SCHOOL (IN SQ MTR)</td><td>4000 Sq.mtres</td></tr>
               <tr><td>2</td><td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)</td><td>Nos of Classrooms:  29</td></tr>
-              <tr><td>3</td><td>NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)</td><td>Nos of Laboratories: 05</td></tr>
+              <tr><td>3</td><td>NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)</td><td>Nos of Laboratories: 07</td></tr>
               <tr><td>4</td><td>INTERNET FACILITY</td><td>YES</td></tr>
               <tr><td>5</td><td>NO. OF GIRLS TOILETS</td><td>18</td></tr>
               <tr><td>6</td><td>NO. OF BOYS TOILETS</td><td>12</td></tr>

@@ -83,22 +83,10 @@ const galleryItems: GalleryItem[] = [
       'PKS_2592.JPG'
     ],
   },
-    {
-    id: 5,
-    title: 'Sports Day',
-    description: 'Students showing energy, strength and sportsmanship',
-    category: 'Sports',
-    folder: 'sportsday',
-    images: [
-      'sports1.jpg',
-      'sports2.jpg',
-      'sports3.jpg',
-      'sports4.jpg',
-    ],
-  },
+
 ];
 
-const SchoolGallery = () => {
+const  Curricular = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
@@ -195,4 +183,4 @@ const SchoolGallery = () => {
   );
 };
 
-export default SchoolGallery;
+export default Curricular;

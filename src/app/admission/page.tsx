@@ -3,31 +3,25 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Head from 'next/head';
+
 
 const AdmissionPage = () => {
   return (
-    <div className="admission-page" style={{ fontFamily: "Georgia, serif" }}>
-      <Head>
-        <title>Admissions | Apex International School</title>
-        <meta name="description" content="Begin your child's journey with Apex International School" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet" />
-      </Head>
-
+    <div className="admission-page" style={{ fontFamily: "Georgia, sans-serif" }}>
+     
       {/* Hero Section */}
-      <div className="hero-section position-relative mb-5">
+      {/* <div className="hero-section position-relative mb-5">
         <Image
           src="/ApexBuilding.jpg"
           alt="Admission Hero"
           width={1200}
-          height={450}
+          height={250}
           priority
           style={{
             objectFit: 'cover',
             borderBottom: '4px solid #1a365d',
             width: '100%',
-            height: 'auto',
+            height: '250',
           }}
         />
         <motion.div
@@ -41,7 +35,49 @@ const AdmissionPage = () => {
             Everything you need to know about joining Apex International School
           </p>
         </motion.div>
-      </div>
+      </div> */}
+      <motion.div 
+              className="hero-section position-relative mb-5 overflow-hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="position-absolute w-100 h-100" style={{ backgroundColor: 'rgba(26, 54, 93, 0.7)', zIndex: 1 }}></div>
+              <Image
+                src="/ApexBuilding.jpg"
+                alt="Admission Hero"
+                width={1200}
+                height={400}
+                priority
+                className="position-relative"
+                style={{
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '400px',
+                  zIndex: 0
+                }}
+              />
+              <motion.div
+                className="hero-text position-absolute top-50 start-50 translate-middle text-white text-center px-3"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                style={{ zIndex: 2 }}
+              >
+                <h1 className="display-4 fw-bold mb-3">Admission Process</h1>
+                <p className="lead fs-5 mb-4" style={{ maxWidth: '700px', margin: '0 auto', fontWeight: 300 }}>
+                  Everything you need to know about joining Apex International School
+                </p>
+                {/* <motion.button 
+                  className="btn btn-light btn-lg rounded-pill px-4 py-2 fw-bold mt-2"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{ background: 'rgba(255,255,255,0.9)', color: '#1a365d' }}
+                >
+                  Explore Our Programs <i className="bi bi-arrow-right ms-2"></i>
+                </motion.button> */}
+              </motion.div>
+            </motion.div>
 
       <div className="container" style={{ maxWidth: '1200px' }}>
         <div className="row g-4 mb-5">
@@ -59,7 +95,7 @@ const AdmissionPage = () => {
                   <div className="bg-primary bg-opacity-10 text-primary rounded-2 p-2 me-3">
                     <i className="bi bi-list-ol fs-4"></i>
                   </div>
-                  <h2 className="fw-bold mb-0" style={{ color: '#1a365d', fontSize: '1.8rem' }}>Admission Process</h2>
+                  <h2 className="fw-bold mb-0" style={{ color: '#1e3c72', fontSize: '1.8rem' }}>Admission Process</h2>
                 </div>
 
                 <div className="timeline-steps">
@@ -131,7 +167,7 @@ const AdmissionPage = () => {
                   <div className="bg-primary bg-opacity-10 text-primary rounded-2 p-2 me-3">
                     <i className="bi bi-folder fs-4"></i>
                   </div>
-                  <h2 className="fw-bold mb-0" style={{ color: '#1a365d', fontSize: '1.8rem' }}>Documents Required</h2>
+                  <h2 className="fw-bold mb-0" style={{ color: '#1e3c72', fontSize: '1.8rem' }}>Documents Required</h2>
                 </div>
 
                 <div className="list-group list-group-flush">
