@@ -156,8 +156,8 @@ const AcademicsPage = () => {
 
         {/* Stats Section */}
         <motion.div 
-          className="row g-4 mb-5 py-5 rounded-4 shadow-sm"
-          style={{ backgroundColor: '#f8f9fa' }}
+          className="row g-4 mb-5 py-5 rounded-4 "
+          style={{ backgroundColor: '#f8f9fa',marginLeft:'150px' }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
