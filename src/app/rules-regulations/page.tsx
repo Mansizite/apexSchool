@@ -291,7 +291,7 @@ const RulesSection = () => (
             <div className="position-relative" style={{ height: '180px' }}>
               <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
                 <div className="bg-white bg-opacity-75 rounded-circle p-3 shadow-lg">
-                  <i className={`bi ${section.icon} fs-2`} style={{ color: '#8e24aa' }}></i>
+                  <i className={`bi ${section.icon} fs-1`} style={{ color: '#8e24aa' }}></i>
                 </div>
               </div>
             </div>
