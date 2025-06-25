@@ -54,6 +54,54 @@ const galleryData = [
      
     ],
   },
+  {
+       folder: "sportsday",
+    images: [
+       "IMG-20250624-WA0112.jpg",
+      "IMG-20250624-WA0105.jpg",
+      "IMG-20250624-WA0106.jpg",
+      "IMG-20250624-WA0107.jpg",
+      "IMG-20250624-WA0108.jpg",
+      "IMG-20250624-WA0109.jpg",
+      "IMG-20250624-WA0110.jpg",
+      "IMG-20250624-WA0111.jpg",
+     
+      "IMG-20250624-WA0113.jpg",
+      "IMG-20250624-WA0114.jpg",
+      "IMG-20250624-WA0116.jpg",
+        "IMG-20250624-WA0117.jpg",
+        
+    ],
+  },
+  {
+    folder: "fathersday",
+    images: [
+      "image1.jpg",
+      "IMG-20250624-WA0061.jpg",
+      "IMG-20250624-WA0078.jpg",
+      "IMG-20250624-WA0079.jpg",
+      "IMG-20250624-WA0080.jpg",
+      "IMG-20250624-WA0081.jpg",
+      "IMG-20250624-WA0082.jpg",
+      "IMG-20250624-WA0083.jpg",
+      "IMG-20250624-WA0084.jpg",
+      "IMG-20250624-WA0085.jpg",
+      "IMG-20250624-WA0086.jpg",
+      "IMG-20250624-WA0087.jpg",
+      "IMG-20250624-WA0088.jpg",
+      "IMG-20250624-WA0089.jpg",
+      "IMG-20250624-WA0090.jpg",
+      "IMG-20250624-WA0091.jpg",
+      "IMG-20250624-WA0092.jpg",
+      "IMG-20250624-WA0093.jpg",
+      "IMG-20250624-WA0094.jpg",
+      "IMG-20250624-WA0095.jpg",
+      "IMG-20250624-WA0096.jpg",
+      "IMG-20250624-WA0097.jpg",
+      "IMG-20250624-WA0098.jpg",
+      "IMG-20250624-WA0099.jpg",
+    ],
+  }
 ];
 
 const GalleryPage = () => {

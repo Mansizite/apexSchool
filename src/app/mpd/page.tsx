@@ -20,6 +20,7 @@ const ViewButton: React.FC<ViewButtonProps> = ({ href }) => (
 );
 
 
+
 const MpdPage = () => {
   return (
     <div className="container my-5" style={{ fontFamily: 'Georgia, serif' }}>
@@ -35,16 +36,17 @@ const MpdPage = () => {
             <tbody>
               <tr><td>1</td><td>NAME OF THE SCHOOL</td><td>Apex International School</td></tr>
               <tr><td>2</td><td>AFFILIATION NO. (IF APPLICABLE)</td><td>Under Process</td></tr>
-              <tr><td>3</td><td>SCHOOL CODE (IF APPLICABLE)</td><td>27252003222</td></tr>
-              <tr><td>4</td><td>COMPLETE ADDRESS WITH PIN CODE</td><td>Sr.No. 501/3, Near Prism City, Charholi Bk, Tal- Haveli, Dist- Pune, 412105</td></tr>
-              <tr><td>5</td><td>PRINCIPAL NAME</td><td>Manasi Paramdeep Singh Gill</td></tr>
-              <tr><td>6</td><td>PRINCIPAL QUALIFICATION</td><td>M.Sc M.Ed DSM</td></tr>
-              <tr><td>7</td><td>SCHOOL EMAIL ID</td><td>apexschoolcharholi@gmail.com</td></tr>
-              <tr><td>8</td><td>CONTACT DETAILS (LANDLINE/MOBILE)</td><td>8625837474</td></tr>
+              {/* <tr><td>3</td><td>SCHOOL CODE (IF APPLICABLE)</td><td>27252003222</td></tr> */}
+              <tr><td>3</td><td>COMPLETE ADDRESS WITH PIN CODE</td><td>Sr.No. 501/3, Near Prism City, Charholi Bk, Tal- Haveli, Dist- Pune, 412105</td></tr>
+              <tr><td>4</td><td>PRINCIPAL NAME</td><td>Manasi Paramdeep Singh Gill</td></tr>
+              <tr><td>5</td><td>PRINCIPAL QUALIFICATION</td><td>M.Sc M.Ed DSM</td></tr>
+              <tr><td>6</td><td>SCHOOL EMAIL ID</td><td>apexschoolcharholi@gmail.com</td></tr>
+              <tr><td>7</td><td>CONTACT DETAILS (LANDLINE/MOBILE)</td><td>8625837474</td></tr>
             </tbody>
           </table>
         </div>
       </div>
+
 
       {/* Section B: Documents and Information */}
       <div className="card mb-4 shadow-sm">

@@ -64,7 +64,7 @@ const AcademicsPage = () => {
           style={{ zIndex: 2 }}
         >
           <h1 className="display-4 fw-bold mb-3">Academic Excellence</h1>
-          <p className="lead fs-5 mb-4" style={{ maxWidth: '700px', margin: '0 auto', fontWeight: 300 }}>
+          <p className="lead fs-5 mb-4" style={{ maxWidth: '700px', margin: '0 auto', fontWeight: 300,color:'white' }}>
             Discover how our innovative teaching methodology helps each child achieve their full potential
           </p>
           <motion.button 
@@ -167,7 +167,7 @@ const AcademicsPage = () => {
             { value: '98%', label: 'Graduation Rate' },
             { value: '12:1', label: 'Student-Teacher Ratio' },
             { value: '25+', label: 'Extracurricular Programs' },
-            { value: '100%', label: 'College Acceptance' }
+          
           ].map((stat, index) => (
             <div className="col-md-3 col-6 text-center" key={index}>
               <motion.div
@@ -184,53 +184,28 @@ const AcademicsPage = () => {
         </motion.div>
 
         {/* CTA Section */}
-        <motion.div
-          className="text-center mb-5 p-5 rounded-4 position-relative overflow-hidden"
-          style={{
-            background: 'linear-gradient(135deg, #1a365d 0%, #2c5282 100%)',
-            color: 'white'
-          }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="position-absolute top-0 end-0 w-100 h-100 opacity-10">
-            <div className="position-absolute end-0 top-0">
-              <div style={{ 
-                width: '300px', 
-                height: '300px', 
-                borderRadius: '50%', 
-                background: 'radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%)',
-                transform: 'translate(40%, -40%)'
-              }}></div>
-            </div>
-          </div>
-          
-          <h2 className="display-6 fw-bold mb-3">Ready to Begin Your Journey?</h2>
-          <p className="mb-4 fs-5" style={{ maxWidth: '600px', margin: '0 auto', opacity: 0.9 }}>
-            Schedule a campus tour or speak with our admissions team today
-          </p>
-          
-          <div className="d-flex flex-wrap justify-content-center gap-3">
-            <motion.button 
-              className="btn btn-light px-4 py-3 fw-bold rounded-pill"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              style={{ color: '#1a365d' }}
-            >
-              <i className="bi bi-calendar-check me-2"></i>Schedule a Tour
-            </motion.button>
-            
-            <motion.button 
-              className="btn btn-outline-light px-4 py-3 fw-bold rounded-pill"
-              whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.1)' }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <i className="bi bi-chat-dots me-2"></i>Contact Admissions
-            </motion.button>
-          </div>
-        </motion.div>
+         <motion.div
+                 className="text-center mb-5 p-4 p-lg-5 rounded-3"
+                 style={{
+                   backgroundColor: '#f8f9fa',
+                   border: '1px dashed #1a365d'
+                 }}
+                 initial={{ opacity: 0, scale: 0.95 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.5 }}
+                 viewport={{ once: true }}
+               >
+                 <h2 className="fw-bold mb-3" style={{ color: '#1a365d' }}>Ready to Apply?</h2>
+                 <p className="mb-4" style={{ color: '#4a5568', maxWidth: '600px', margin: '0 auto' }}>
+                   Begin your child&apos;s educational journey with us today
+                 </p>
+                  <button className="btn btn-primary px-4 py-2 fw-bold me-2">
+                   <i className="bi bi-calendar-check me-2"></i>Schedule Tour
+                 </button> 
+                 <button className="btn btn-outline-primary px-4 py-2 fw-bold">
+                   <i className="bi bi-telephone me-2"></i>Contact Us
+                 </button>
+               </motion.div>
       </div>
 
       <style jsx global>{`

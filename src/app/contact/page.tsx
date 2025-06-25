@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/css/templatemo-leadership-event.css';  
+ import '@/css/templatemo-leadership-event.css';  
 import '@/css/bootstrap.min.css';
 import '@/css/bootstrap-icons.css';
 import Navbar from '@/components/navbar'; 

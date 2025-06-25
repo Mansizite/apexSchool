@@ -309,7 +309,7 @@ const RulesSection = () => (
                 ))}
               </ul>
             </div>
-
+{/* 
             <div className="card-footer bg-transparent border-0 py-3 px-4">
               <button className="btn w-100" style={{
                 background: '#1e3c72',
@@ -319,7 +319,7 @@ const RulesSection = () => (
               }}>
                 <i className="bi bi-info-circle me-2"></i>View Full Policy
               </button>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       ))}

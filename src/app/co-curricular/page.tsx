@@ -1,10 +1,8 @@
+"use client";
 
-'use client';
-
-import React, { useState } from 'react';
-import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
-import Image from 'next/image';
-
+import React, { useState } from "react";
+import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap";
+import Image from "next/image";
 
 // Define the type for a gallery item
 interface GalleryItem {
@@ -16,77 +14,130 @@ interface GalleryItem {
   images: string[];
 }
 
-
-
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    title: 'Dindi Celebration',
-    description: 'Celebrating traditions with joy and unity',
-    category: 'Cultural',
-    folder: 'dindiCelebration',
+    title: "Dindi Celebration",
+    description: "Celebrating traditions with joy and unity",
+    category: "Cultural",
+    folder: "dindiCelebration",
     images: [
-      'IMG-20250619-WA0040.jpg',
-      'IMG-20250619-WA0047.jpg',
-      'IMG-20250619-WA0048.jpg',
-      'IMG-20250619-WA0049.jpg',
-      'IMG-20250619-WA0050.jpg',
-      'IMG-20250619-WA0051.jpg',
+      "IMG-20250619-WA0040.jpg",
+      "IMG-20250619-WA0047.jpg",
+      "IMG-20250619-WA0048.jpg",
+      "IMG-20250619-WA0049.jpg",
+      "IMG-20250619-WA0050.jpg",
+      "IMG-20250619-WA0051.jpg",
     ],
   },
   {
     id: 3,
-    title: 'Color Day Celebration',
-    description: 'A day filled with vibrant colors and cheerful activities',
-    category: 'Events',
-    folder: 'colorday',
+    title: "Color Day Celebration",
+    description: "A day filled with vibrant colors and cheerful activities",
+    category: "Events",
+    folder: "colorday",
     images: [
-      'IMG-20250619-WA0022.jpg',
-      'IMG-20250619-WA0021.jpg',
-      'IMG-20250619-WA0036.jpg',
-      'IMG-20250619-WA0041.jpg',
-      'IMG-20250619-WA0042.jpg',
-      'IMG-20250619-WA0045.jpg',
-      'IMG-20250619-WA0054.jpg',
-      'IMG-20250619-WA0055.jpg',
+      "IMG-20250619-WA0022.jpg",
+      "IMG-20250619-WA0021.jpg",
+      "IMG-20250619-WA0036.jpg",
+      "IMG-20250619-WA0041.jpg",
+      "IMG-20250619-WA0042.jpg",
+      "IMG-20250619-WA0045.jpg",
+      "IMG-20250619-WA0054.jpg",
+      "IMG-20250619-WA0055.jpg",
     ],
   },
   {
     id: 4,
-    title: 'Role Play Competition',
-    description: 'Students showcasing talent through creative enactments',
-    category: 'Co-curricular',
-    folder: 'roleplay',
+    title: "Role Play Competition",
+    description: "Students showcasing talent through creative enactments",
+    category: "Co-curricular",
+    folder: "roleplay",
     images: [
-      'IMG-20250619-WA0008.jpg',
-      'IMG-20250619-WA0009.jpg',
-      'IMG-20250619-WA0010.jpg',
-      'IMG-20250619-WA0011.jpg',
-      'IMG-20250619-WA0012.jpg',
-      'IMG-20250619-WA0020.jpg',
-      'IMG-20250619-WA0024.jpg',
-    ],
-  },
- 
-   {
-    id: 6,
-    title: 'Annual Day',
-    description: 'A grand celebration of achievements and performances',
-    category: 'Annual Event',
-    folder: 'annualday',
-    images: [
-      'PKS_2233.JPG',
-      'PKS_2214.JPG',
-      'PKS_2219.JPG',
-      
-      'PKS_2369.JPG',
-      'PKS_2592.JPG'
+      "IMG-20250619-WA0008.jpg",
+      "IMG-20250619-WA0009.jpg",
+      "IMG-20250619-WA0010.jpg",
+      "IMG-20250619-WA0011.jpg",
+      "IMG-20250619-WA0012.jpg",
+      "IMG-20250619-WA0020.jpg",
+      "IMG-20250619-WA0024.jpg",
     ],
   },
 
+  {
+    id: 6,
+    title: "Annual Day",
+    description: "A grand celebration of achievements and performances",
+    category: "Annual Event",
+    folder: "annualday",
+    images: [
+      "PKS_2233.JPG",
+      "PKS_2214.JPG",
+      "PKS_2219.JPG",
+
+      "PKS_2369.JPG",
+      "PKS_2592.JPG",
+    ],
+  },
+  {
+    id: 5,
+    title: "Father’s Day Celebration",
+    description: "Honoring the incredible role of fathers in our lives",
+    category: "Events",
+    folder: "fathersday",
+    images: [
+      "image1.jpg",
+      "IMG-20250624-WA0061.jpg",
+      "IMG-20250624-WA0078.jpg",
+      "IMG-20250624-WA0079.jpg",
+      "IMG-20250624-WA0080.jpg",
+      "IMG-20250624-WA0081.jpg",
+      "IMG-20250624-WA0082.jpg",
+      "IMG-20250624-WA0083.jpg",
+      "IMG-20250624-WA0084.jpg",
+      "IMG-20250624-WA0085.jpg",
+      "IMG-20250624-WA0086.jpg",
+      "IMG-20250624-WA0087.jpg",
+      "IMG-20250624-WA0088.jpg",
+      "IMG-20250624-WA0089.jpg",
+      "IMG-20250624-WA0090.jpg",
+      "IMG-20250624-WA0091.jpg",
+      "IMG-20250624-WA0092.jpg",
+      "IMG-20250624-WA0093.jpg",
+      "IMG-20250624-WA0094.jpg",
+      "IMG-20250624-WA0095.jpg",
+      "IMG-20250624-WA0096.jpg",
+      "IMG-20250624-WA0097.jpg",
+      "IMG-20250624-WA0098.jpg",
+      "IMG-20250624-WA0099.jpg",
+    ],
+  },
+  {
+    id: 7,
+    title: "Sports Day",
+    description: "Celebrating athleticism, teamwork, and school spirit",
+    category: "Sports",
+    folder: "sportsday",
+    images: [
+       "IMG-20250624-WA0112.jpg",
+      "IMG-20250624-WA0105.jpg",
+      "IMG-20250624-WA0106.jpg",
+      "IMG-20250624-WA0107.jpg",
+      "IMG-20250624-WA0108.jpg",
+      "IMG-20250624-WA0109.jpg",
+      "IMG-20250624-WA0110.jpg",
+      "IMG-20250624-WA0111.jpg",
+     
+      "IMG-20250624-WA0113.jpg",
+      "IMG-20250624-WA0114.jpg",
+      "IMG-20250624-WA0116.jpg",
+        "IMG-20250624-WA0117.jpg",
+        
+    ],
+  },
 ];
 
-const  Curricular = () => {
+const Curricular = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
@@ -103,13 +154,12 @@ const  Curricular = () => {
   return (
     <div>
       {/* Hero Carousel Section */}
-    
 
       {/* Gallery Section */}
       <section className="py-5 bg-light">
         <Container>
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold" style={{ color: '#1e3c72' }}>
+            <h2 className="display-5 fw-bold" style={{ color: "#1e3c72" }}>
               Explore Our Campus
             </h2>
             <p className="lead text-muted">
@@ -117,7 +167,11 @@ const  Curricular = () => {
             </p>
             <div
               className="border-bottom"
-              style={{ borderColor: '#1e3c72', width: '25%', margin: '1rem auto' }}
+              style={{
+                borderColor: "#1e3c72",
+                width: "25%",
+                margin: "1rem auto",
+              }}
             />
           </div>
 
@@ -125,25 +179,33 @@ const  Curricular = () => {
             {galleryItems.map((item) => (
               <Col key={item.id}>
                 <Card className="h-100 shadow-sm border-0">
-                  <div className="bg-secondary position-relative" style={{ height: '200px' }}>
+                  <div
+                    className="bg-secondary position-relative"
+                    style={{ height: "200px" }}
+                  >
                     <Image
                       src={`/images/${item.folder}/${item.images[0]}`}
                       alt={item.title}
                       fill
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                     />
                   </div>
 
-                  <Card.Body className="d-flex flex-column" style={{ color: '#1e3c72' }}>
+                  <Card.Body
+                    className="d-flex flex-column"
+                    style={{ color: "#1e3c72" }}
+                  >
                     <Card.Title className="fs-5">{item.title}</Card.Title>
                     <Card.Subtitle className="mb-2">
                       <span className="badge bg-primary">{item.category}</span>
                     </Card.Subtitle>
-                    <Card.Text className="flex-grow-1 text-muted small">{item.description}</Card.Text>
+                    <Card.Text className="flex-grow-1 text-muted small">
+                      {item.description}
+                    </Card.Text>
                     <Button
                       variant="outline-primary"
                       className="mt-auto"
-                      style={{ color: '#1e3c72', borderColor: '#1e3c72' }}
+                      style={{ color: "#1e3c72", borderColor: "#1e3c72" }}
                       onClick={() => handleOpenModal(item)}
                     >
                       View Images <i className="bi bi-images ms-2"></i>
@@ -166,12 +228,12 @@ const  Curricular = () => {
           <Row xs={2} md={3} lg={4} className="g-3">
             {selectedItem?.images.map((img, index) => (
               <Col key={index}>
-                <div className="position-relative" style={{ height: '200px' }}>
+                <div className="position-relative" style={{ height: "200px" }}>
                   <Image
                     src={`/images/${selectedItem.folder}/${img}`}
                     alt={`${selectedItem.title} ${index + 1}`}
                     fill
-                    style={{ objectFit: 'cover', borderRadius: '8px' }}
+                    style={{ objectFit: "cover", borderRadius: "8px" }}
                   />
                 </div>
               </Col>

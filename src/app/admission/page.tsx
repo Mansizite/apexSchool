@@ -65,7 +65,7 @@ const AdmissionPage = () => {
                 style={{ zIndex: 2 }}
               >
                 <h1 className="display-4 fw-bold mb-3">Admission Process</h1>
-                <p className="lead fs-5 mb-4" style={{ maxWidth: '700px', margin: '0 auto', fontWeight: 300 }}>
+                <p className="lead fs-5 mb-4" style={{ maxWidth: '700px', margin: '0 auto', fontWeight: 300,color:'white' }}>
                   Everything you need to know about joining Apex International School
                 </p>
                 {/* <motion.button 
@@ -222,12 +222,15 @@ const AdmissionPage = () => {
           <p className="mb-4" style={{ color: '#4a5568', maxWidth: '600px', margin: '0 auto' }}>
             Begin your child&apos;s educational journey with us today
           </p>
-          <button className="btn btn-primary px-4 py-2 fw-bold me-2">
+           <button className="btn btn-primary px-4 py-2 fw-bold me-2">
             <i className="bi bi-calendar-check me-2"></i>Schedule Tour
-          </button>
-          <button className="btn btn-outline-primary px-4 py-2 fw-bold">
-            <i className="bi bi-telephone me-2"></i>Contact Us
-          </button>
+          </button> 
+         <a href="/contact">
+  <button className="btn btn-outline-primary px-4 py-2 fw-bold">
+    <i className="bi bi-telephone me-2"></i>Contact Us
+  </button>
+</a>
+
         </motion.div>
       </div>
 

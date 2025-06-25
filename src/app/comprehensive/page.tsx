@@ -325,16 +325,16 @@ export default function SchoolDetailsPage() {
           href: "/school-details/accreditation",
           icon: "bi bi-award"
         },
-        {
-          title: "List of School Managing Committee Members",
-          href: "/school-details/committee",
-          icon: "bi bi-people"
-        },
-        {
-          title: "Staff Statement",
-          href: "/school-details/staff-statement",
-          icon: "bi bi-person-lines-fill"
-        },
+        // {
+        //   title: "List of School Managing Committee Members",
+        //   href: "/school-details/committee",
+        //   icon: "bi bi-people"
+        // },
+        // {
+        //   title: "Staff Statement",
+        //   href: "/school-details/staff-statement",
+        //   icon: "bi bi-person-lines-fill"
+        // },
       ]
     },
     {
@@ -375,11 +375,11 @@ export default function SchoolDetailsPage() {
           href: "/school-details/school-circulars",
           icon: "bi bi-file-earmark-ruled"
         },
-        {
-          title: "Fee Structure and Fixation Norms",
-          href: "/school-details/fee-structure",
-          icon: "bi bi-cash-stack"
-        },
+        // {
+        //   title: "Fee Structure and Fixation Norms",
+        //   href: "/school-details/fee-structure",
+        //   icon: "bi bi-cash-stack"
+        // },
       ]
     },
     {
@@ -395,11 +395,7 @@ export default function SchoolDetailsPage() {
           href: "/school-details/pocso-committee",
           icon: "bi bi-shield-lock"
         },
-        {
-          title: "PTA Committee Details",
-          href: "/school-details/pta-committee",
-          icon: "bi bi-person-gear"
-        },
+      
         {
           title: "Anti-Bullying Committee Details",
           href: "/school-details/anti-bullying",
@@ -425,11 +421,7 @@ export default function SchoolDetailsPage() {
           href: "/school-details/self-affidavit",
           icon: "bi bi-file-earmark-check"
         },
-        {
-          title: "Annual Planner/Calendar",
-          href: "/school-details/annual-planner",
-          icon: "bi bi-calendar3"
-        },
+    
         {
           title: "Annual Report",
           href: "/school-details/annual-report",
