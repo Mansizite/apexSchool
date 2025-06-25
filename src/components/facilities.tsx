@@ -151,7 +151,7 @@ const AboutAndSpeakers = () => {
   Regards,<br />
   <span style={{ fontSize: '1.2rem', color: '#1a237e', fontWeight: 'bold' }}>{member.name}</span><br />
   <span style={{
-   fontSize: '1.1rem', color: 'indigo', fontWeight: 'bold'
+   fontSize: '1.1rem', color: '#ef8a21', fontWeight: 'bold'
   }}>
     {member.role}
   </span>
