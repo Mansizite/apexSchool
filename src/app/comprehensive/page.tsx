@@ -457,7 +457,7 @@ export default function SchoolDetailsPage() {
         },
         {
           title: "Annual Report",
-          href: "/school-details/annual-report",
+          href: "annual.pdf",
           icon: "bi bi-file-earmark-bar-graph"
         }
       ]
