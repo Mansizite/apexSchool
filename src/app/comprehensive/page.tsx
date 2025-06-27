@@ -452,7 +452,7 @@ export default function SchoolDetailsPage() {
         },
         {
           title: "Self-Affidavit",
-          href: "self-affidavit.pdf",
+          href: "self-affidavit1.pdf",
           icon: "bi bi-file-earmark-check"
         },
         {
@@ -467,7 +467,7 @@ export default function SchoolDetailsPage() {
       items: [
         {
           title: "Infrastructure Facilities",
-          href: "/school-details/infrastructure",
+          href: "school-infra.pdf",
           icon: "bi bi-building"
         },
         {
