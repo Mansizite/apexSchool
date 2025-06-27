@@ -452,7 +452,7 @@ export default function SchoolDetailsPage() {
         },
         {
           title: "Self-Affidavit",
-          href: "/school-details/self-affidavit",
+          href: "self-affidavit.pdf",
           icon: "bi bi-file-earmark-check"
         },
         {
