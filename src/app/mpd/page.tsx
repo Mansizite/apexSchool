@@ -36,12 +36,12 @@ const MpdPage = () => {
             <tbody>
               <tr><td>1</td><td>NAME OF THE SCHOOL</td><td>Apex International School</td></tr>
               <tr><td>2</td><td>AFFILIATION NO. (IF APPLICABLE)</td><td>Under Process</td></tr>
-              {/* <tr><td>3</td><td>SCHOOL CODE (IF APPLICABLE)</td><td>27252003222</td></tr> */}
-              <tr><td>3</td><td>COMPLETE ADDRESS WITH PIN CODE</td><td>Sr.No. 501/3, Near Prism City, Charholi Bk, Tal- Haveli, Dist- Pune, 412105</td></tr>
-              <tr><td>4</td><td>PRINCIPAL NAME</td><td>Manasi Paramdeep Singh Gill</td></tr>
-              <tr><td>5</td><td>PRINCIPAL QUALIFICATION</td><td>M.Sc M.Ed DSM</td></tr>
-              <tr><td>6</td><td>SCHOOL EMAIL ID</td><td>apexschoolcharholi@gmail.com</td></tr>
-              <tr><td>7</td><td>CONTACT DETAILS (LANDLINE/MOBILE)</td><td>8625837474</td></tr>
+               <tr><td>3</td><td>SCHOOL CODE (IF APPLICABLE)</td><td>Under Process</td></tr>
+              <tr><td>4</td><td>COMPLETE ADDRESS WITH PIN CODE</td><td>Sr.No. 501/3, Near Prism City, Charholi Bk, Tal- Haveli, Dist- Pune, 412105</td></tr>
+              <tr><td>5</td><td>PRINCIPAL NAME</td><td>Manasi Paramdeep Singh Gill</td></tr>
+              <tr><td>6</td><td>PRINCIPAL QUALIFICATION</td><td>M.Sc M.Ed DSM</td></tr>
+              <tr><td>7</td><td>SCHOOL EMAIL ID</td><td>apexschoolcharholi@gmail.com</td></tr>
+              <tr><td>8</td><td>CONTACT DETAILS (LANDLINE/MOBILE)</td><td>8625837474</td></tr>
             </tbody>
           </table>
         </div>
@@ -60,7 +60,7 @@ const MpdPage = () => {
               <tr><td>1</td><td>COPIES OF AFFILIATION / UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td><td><ViewButton href="/pdfs/affiliation-letter.pdf" /></td></tr>
               <tr><td>2</td><td>COPIES OF SOCIETIES / TRUST / COMPANY REGISTRATION / RENEWAL CERTIFICATE, AS APPLICABLE</td><td><ViewButton href="Registration-certificate.pdf" /></td></tr>
               <tr><td>3</td><td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT</td><td><ViewButton href="No-Objection-Certificate.pdf" /></td></tr>
-              <tr><td>4</td><td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td><td><ViewButton href="recognition.pdf" /></td></tr>
+              <tr><td>4</td><td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE</td><td><ViewButton href="b-section-4.pdf" /></td></tr>
               <tr><td>5</td><td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td><td><ViewButton href="building1.pdf" /></td></tr>
               <tr><td>6</td><td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td><td><ViewButton href="Fire-Safety.pdf" /></td></tr>
               <tr><td>7</td><td>COPY OF SELF CERTIFICATION BY SCHOOL</td><td><ViewButton href="b-section-7.pdf" /></td></tr>
@@ -81,7 +81,7 @@ const MpdPage = () => {
               <tr><th>SR No.</th><th>DOCUMENTS / INFORMATION</th><th>UPLOADED DOCUMENTS</th></tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><ViewButton href="fee-structure.pdf" /></td></tr>
+              <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><ViewButton href="c-section-1.pdf" /></td></tr>
               <tr><td>2</td><td>ANNUAL ACADEMIC CALENDER</td><td><ViewButton href="Academic_Calendar.pdf" /></td></tr>
               <tr><td>3</td><td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td><td><ViewButton href="SMC1.pdf" /></td></tr>
               <tr><td>4</td><td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td><td><ViewButton href="PTA1.pdf" /></td></tr>
